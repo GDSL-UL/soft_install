@@ -1,16 +1,18 @@
 --- 
-title: "A Minimal Book Example"
-author: "Yihui Xie"
-date: "2020-09-02"
+title: "Installation Guide"
+author: "Francisco Rowe, Dani Arribas-Bel"
+date: "2020-09-03"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output: tint::tintHtml
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: rstudio/bookdown-demo
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+github-repo: GDSL-UL/soft_install
+description: "Installation Guide for R and Python"
 ---
+
+
 
 # Prerequisites
 
