@@ -1,5 +1,5 @@
 --- 
-title: "Installation Guide"
+title: "Software Installation Guide"
 author: "Francisco Rowe, Dani Arribas-Bel"
 date: "2020-09-08"
 site: bookdown::bookdown_site

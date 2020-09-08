@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.8.9)  8 SEP 2020 23:32
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.8.9)  8 SEP 2020 23:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -980,7 +980,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  18336 strings out of 481691
  328542 string characters out of 5932082
- 756245 words of memory out of 5000000
+ 756311 words of memory out of 5000000
  35169 multiletter control sequences out of 15000+600000
  541539 words of font info for 82 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
