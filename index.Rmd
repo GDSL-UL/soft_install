@@ -1,5 +1,5 @@
 --- 
-title: "Installation Guide"
+title: "Software Installation Guide"
 author: "Francisco Rowe, Dani Arribas-Bel"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
