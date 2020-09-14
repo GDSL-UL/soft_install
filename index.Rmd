@@ -50,4 +50,8 @@ knitr::include_graphics("figs/other_win.png")
 ```
     
 
+---
+
+Other parts that we might consider including:
+
 
