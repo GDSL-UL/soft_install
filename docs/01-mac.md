@@ -6,15 +6,15 @@
 ### Check success
 ## Running Python through Docker
 
-# Downloading Docker for MacOS
+## Downloading Docker for MacOS
 
-## Requirements
+### Requirements
 1. A stable internet connection
 2. ~1.4GB of space on your hard drive
 2. MacOS version 10.13 or newer i.e. High Sierra, Mojave or Catalina
 3. Mac hardware must be a 2010 model or newer
 
-## Installation steps
+### Installation steps
 1. Go to the [dockerhub website](https://hub.docker.com/editions/community/docker-ce-desktop-mac/).
 2. Ensure you meet the criteria for download (it is the same as stated above) and then select 'Get Stable' button.
 
@@ -44,10 +44,10 @@ You have successfully downloaded Docker!
 
 Next steps: [Using Docker]
 
-# Using Docker
+## Using Docker
 Now we have Docker installed we can use it to access Python and all the associated packages we need for the practicals
 
-## Installing the GDS environment
+### Installing the GDS environment
 1. Access your terminal: **Launchpad** > **Other** > **Terminal**
 2. In a fresh line in the terminal type the following to install the GDS environment container: docker pull darribas/gds:3.0
 <img src="figs/chp1/Figure5.png" width="286" style="display: block; margin: auto;" />
@@ -60,7 +60,8 @@ Dont be alarmed if it seems to take a very long time.
 
 You will know this has completed when each line says 'Pull complete' and the new line gives your machine name followed by a $ sign.
 
-## Running the container
+### Running the container
+
 1. In the new terminal line type the following command to run the container: docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:3.0
 
 <img src="figs/chp1/Figure7.png" width="286" style="display: block; margin: auto;" />
@@ -90,7 +91,7 @@ You have now started a Python session.
 [Using Jupyter Notebook]
 
 
-# Using Jupyter Notebook
+## Using Jupyter Notebook
 
 - This notebook is where you will run your code. Each shaded box is called a kernel. To test this out you can type 'print('test')' into one of these kernels. To run the code use the shortcut Ctrl + Enter.
 
@@ -111,7 +112,8 @@ You have now started a Python session.
 
 [Ending your session]
 
-# Ending your session
+## Ending your session
+
 Once you have finished in your Jupyter session and have saved all your work, you can end the session from the terminal.
 
 Using Ctrl+C will prompt a y/n option. Either type y or Ctrl + C again to end the session. 
@@ -125,7 +127,5 @@ You can now safely shut the terminal window.
 <br>
 
 Next time you go to run a Jupyter Notebook you will not need to repeat the whole process as you have already installed Docker and the GDS environment. Instead you can start from Section 2.2: [Running the container] and carry on from there.
-
-
 
 
