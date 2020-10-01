@@ -14,25 +14,25 @@
 1. Go to the [dockerhub website](https://hub.docker.com/editions/community/docker-ce-desktop-mac/).
 2. Ensure you meet the criteria for download (it is the same as stated above) and then select 'Get Stable' button.
 
-<img src="figs/chp1/Figure1.png" width="1320" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure1.png" width="660" style="display: block; margin: auto;" />
 <br>
 
 3. This will then download to your machine but may take some time. Once finished, to access this download go to **Finder** > **Downloads** > **Docker.dmg** and double click.
 
-<img src="figs/chp1/Figure2.png" width="1005" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure2.png" width="502" style="display: block; margin: auto;" />
 
 <br>
 
 4. You should then be prompted to drag and drop this application into the applications folder like so:
 
-<img src="figs/chp1/Figure3.png" width="720" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure3.png" width="360" style="display: block; margin: auto;" />
 You may get further windows asking for access to the program. To these you can click **Open** > **Ok** > enter your account password and click **Install helper**
 
 <br>
 
 
 5. After you have done this, the whale icon should now show in your taskbar:
-<img src="figs/chp1/Figure4.png" width="814" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure4.png" width="407" style="display: block; margin: auto;" />
 
 <br>
 
@@ -49,12 +49,12 @@ Now we have Docker installed we can use it to access Python and all the associat
 1. Access your terminal: **Launchpad** > **Other** > **Terminal**
 2. In a fresh line in the terminal type the following to install the GDS environment container: `docker pull darribas/gds:5.0`
 
-<img src="figs/chp1/Figure5.png" width="572" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure5.png" width="286" style="display: block; margin: auto;" />
 
 <br>
 
 3. This should now prompt a long download process that looks a bit like this:
-<img src="figs/chp1/Figure6.png" width="572" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure6.png" width="286" style="display: block; margin: auto;" />
 Dont be alarmed if it seems to take a very long time.
 
 You will know this has completed when each line says 'Pull complete' and the new line gives your machine name followed by a `$` sign.
@@ -65,7 +65,7 @@ You will know this has completed when each line says 'Pull complete' and the new
 
 1. In the new terminal line type the following command to run the container: `docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:5.0`
 
-<img src="figs/chp1/Figure7.png" width="572" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure7.png" width="286" style="display: block; margin: auto;" />
 
 <br>
 
@@ -77,15 +77,15 @@ You have now started a Python session.
 
 3. The page that loads will prompt you for a password. This password can be found in the text in the terminal following the last command you ran (step 9). A long series of numbers and letters will be preceded by `?token=`. Copy this long series of characters and paste into the password box in your browser.
 
-<img src="figs/chp1/Figure9.png" width="572" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure9.png" width="286" style="display: block; margin: auto;" />
 
 <br>
 
-<img src="figs/chp1/Figure10.png" width="1137" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure10.png" width="568" style="display: block; margin: auto;" />
 
 4. Now you are in Jupyter Lab you can open up a Python 3 notebook
 
-<img src="figs/chp1/Figure11.png" width="1383" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure11.png" width="692" style="display: block; margin: auto;" />
 
 <br>
 
@@ -96,28 +96,28 @@ You have now started a Python session.
 
 - This notebook is where you will run your code. Each shaded box is called a kernel. To test this out you can type `print('test')` into one of these kernels. To run the code use the shortcut `Ctrl + Enter`.
 
-<img src="figs/chp1/Figure12.png" width="1386" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure12.png" width="693" style="display: block; margin: auto;" />
 
 <br>
 
 
 - You can save your notebook using **File** > **Save notebook as**
-<img src="figs/chp1/Figure13.png" width="1075" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure13.png" width="538" style="display: block; margin: auto;" />
 
 <br>
 
 - You can create new folders to organise your work
-<img src="figs/chp1/Figure14.png" width="1079" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure14.png" width="540" style="display: block; margin: auto;" />
 
 <br>
 
 - And you can access other files on your machine through the 'Work' folder in the File Browser. From here you can navigate to your Documents and designated folder for this module
 
-<img src="figs/chp1/Figure15a.png" width="1075" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure15a.png" width="538" style="display: block; margin: auto;" />
 
-<img src="figs/chp1/Figure15b.png" width="1075" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure15b.png" width="538" style="display: block; margin: auto;" />
 
-<img src="figs/chp1/Figure15c.png" width="1075" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure15c.png" width="538" style="display: block; margin: auto;" />
 <br>
 
 [Ending your session]
@@ -127,7 +127,7 @@ Once you have finished in your Jupyter session and have saved all your work, you
 
 Using `Ctrl + C` will prompt a `y/n` option. Either type `y` or `Ctrl + C` again to end the session. 
 
-<img src="figs/chp1/Figure16.png" width="578" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure16.png" width="289" style="display: block; margin: auto;" />
 
 <br>
 
