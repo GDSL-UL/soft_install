@@ -1,7 +1,7 @@
 bookdown::gitbook:
   css: style.css
   config:
-    toc:
+    toc: 
       before: |
         <li><a href="./">Installation Guide</a></li>
       after: |

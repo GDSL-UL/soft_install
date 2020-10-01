@@ -1,4 +1,4 @@
-# Linux Installation {#linux}
+# Linux Installation {.unnumbered}
 
 Instructions to install, test and run `gds_env` with Docker for .
 
@@ -11,14 +11,14 @@ For each of the sections, add:
 > Insert a video with instructions
 
 
-## Installing Docker
+## Installing Docker {.unnumbered}
 
 Draw on instructions from [here](https://gdsl-ul.github.io/the_knowledge/docker.html) and [here](https://darribas.org/gds_env/guides/docker_install/) and [here](https://darribas.org/gds_env/guides/docker_install/)
 
-### Requirements
+### Requirements {.unnumbered}
 
-### Install steps
+### Install steps {.unnumbered}
 
-### Check success
+### Check success {.unnumbered}
 
-## Running Python through Docker
+## Running Python through Docker {.unnumbered}

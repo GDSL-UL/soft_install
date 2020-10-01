@@ -1,75 +1,233 @@
-# Other Windows versions: Native installation {#otherwin}
+# Windows Home or pre-10 Installation {.unnumbered}
 
-In this block, we will cover how to install Python if your machine is running Windows 10 Home, or an earlier version of Windows (e.g. Windows 7). With this approach, you will install Python "natively", that is running directly on your operating system (as opposed to through some virtualisation strategy like Docker).
+## Installing Python {.unnumbered}
 
-## Installing Python
+### Environment File {.unlisted .unnumbered}
 
-### Requirements
+We will start by downloading an environment file, which will later on install all packages that are relevant for your coding
 
-To complete successfully this installation route, you will need the following:
+**NOTE: It would be best to create a dedicated folder (e.g. GDS_2020) for this module.**
 
-- A good internet connection
-- The `gds_py.yml` file that you can download on [this link](https://github.com/darribas/gds_env/raw/master/gds_py/gds_py.yml) (right click and "Save Link As" to download it to your computer)
-- The `jl_setup.bat` file that you can download on [this link](jl_setup.bat)
-- A copy of Miniconda for Windows and Python 3.8 (donwload it from [this page](https://docs.conda.io/en/latest/miniconda.html#windows-installers)). Make sure you choose the architecture of your computer (most modern computers will use 64bit)
+<img src="figs/chp4/Picture4.png" width="736" style="display: block; margin: auto;" />
 
-For the sake of the illustration, we will assume you place the two files (`gds_py.yml` and `jl_setup.bat`) on the `C:\Users\username\Downloads` folder. You do not need to choose this folder but, if you use a different one, please adjust all instructions below accordingly.
+- To download the environment file, right click on this file 
 
-### Install steps
+[**gds_py.yml**](https://raw.githubusercontent.com/darribas/gds_env/master/gds_py/gds_py.yml) 
 
-This process should take overall about one hour, so prepare accordingly. Most of that time however will be the computer "doing its own thing", and you will not need to do much other than making sure it's still ticking and not returning errors. 
+- Select **_Save link as_**.
 
-Here are the steps:
+<img src="figs/chp4/Picture5.png" width="2013" style="display: block; margin: auto;" />
 
-1. **Install Miniconda**. Double click on the `.exe` file you will have downloaded and follow steps as suggested
-1. **Create environment**. This is the step that will install _most_ of what you will need and hence also the longest one. Here's how you can do it:
-    a. Open the Start menu and search for the "Anaconda Prompt". Launch the programme
-    b. Navigate to the folder where you have placed all the required files (`C:\Users\username\Downloads` in this guide)
-    ```
-    cd C:\Users\username\Downloads
-    ```
-    c. Run the following command:
-    ```
-    conda-env create -f gds_py.yml
-    ```
-    This step requires that `gds_py.yml` exists in `C:\Users\username\Downloads` and will take a while, depending on the speed of your connection but no less than 15-20 minutes. Grab a *cuppa* and be patient!
-1. **Activate the environment**. For that, run the following command from the same terminal:
-```
-conda activate gds
-```
-If the environment is activated, `(gds)` will appear at the beginning of the line in your command prompt
-1. **Complete environment setup**. Now, still from the same command prompt, run the following:
-```
-./jl_setup.bat
-```
-This step reuires that `jl_setup.bat` exists in `C:\Users\username\Downloads` and will also take a while, depending on the speed of your connection but no less than 10-15 minutes. Be patient, we're almost there!
+-	A new window will pop up for saving the file, click on **_save_** to save the file. 
+- Make sure to save the file to a location that you can easily find again. 
 
-### Check success
 
-If you have followed and completed the steps above without issues, congratulations, you are all set! To make sure everything has gone according to plan, here is a check you can perform. To complete it, follow these steps:
+### User interface {.unlisted .unnumbered}
 
-1. Download the "checker" file `check_py_stack.ipynb` from [here](https://github.com/darribas/gds_env/raw/master/gds_py/check_py_stack.ipynb) (right click and "Save Link As") and place it in the same folder as all the previous ones (in this guide, `C:\Users\username\Downloads`)
-1. From the same terminal as above, with the environment activated (you'll know that the case if `(gds)` is at the top of the line in the command prompt), run:
-```
-jupyter nbconvert --to html --execute check_py_stack.ipynb
-```
+We will now download the file that will later setup your coding interface (which is called Jupyter Lab). 
 
-This will take a little bit and, if it succeeds, it will produce a file called `check_py_stack.html` that you can open on your browser to inspect. If there are no errors and every cell has been run (marked by every cell being assigned a number), you are all set!!!
+-	To download the jupyter lab setup file, right click on this file 
 
-## Running Python
+[**jl_setup.bat**](https://gdsl-ul.github.io/soft_install/jl_setup.bat) 
 
-If the steps above have completed correctly, you are all set and ready to use Python on your own computer. *Using* Python is a lot faster and more straightforward than *installing* Python, so the hardest is past already. To launch a new Python session, you can follow these steps:
+<img src="figs/chp4/Picture6.png" width="809" style="display: block; margin: auto;" />
 
-1. Open an Anaconda Prompt by going to the "Start Menu" and typing "Anaconda Prompt"; when you find the app, click on it and the same command prompt you used for installation will launch
-1. Navigate to the folder from where you would like to launch your session (for example, your home directory: `C:\Users\username`):
-```
-cd C:\Users\username
-```
-1. Launch Jupyter Lab by running the following command:
-```
-jupyter lab
-```
-This will launch your default browser with a brand new Python session. We recommend using Firefox or Chrome. If your default is not one of those, you can:
-1. Close the window that opens automatically
-1. Open Firefox/Chrome and point it to `http://localhost:8888`
-1. A page will load that asks for a token, copy the one-time token from the command prompt
+- Select **_Save link as_**
+
+<img src="figs/chp4/Picture6_1.png" width="1912" style="display: block; margin: auto;" />
+
+-	A new window will pop up for saving the file, click on **_save_** to save the file. 
+- Make sure to save the file to a location (the same location as the `gds_py.yml` file) that you can easily find again. 
+
+### Download Miniconda {.unlisted .unnumbered}
+
+> Find your system type
+
+Before you can download Miniconda (which is a version of Anaconda), you need to find out what type your Windows system is.
+It can either be 32 bit or 64 bit (most modern computers use 64 bit). 
+
+<img src="figs/chp4/Picture7.png" width="2712" style="display: block; margin: auto;" />
+
+-	Right click on the windows logo in the left bottom corner of the task menu and select **System**
+
+<img src="figs/chp4/Picture8.png" width="2149" style="display: block; margin: auto;" />
+
+-	This will bring you to your system information page.
+- Look at the **System type** section and check if your operating system is 64-bit or 32-bit (highlighted in red). 
+
+### Donwload Miniconda {.unlisted .unnumbered}
+
+
+-	Continue with opening this link to [**Miniconda**](https://docs.conda.io/en/latest/miniconda.html#windows-installers) by right clicking on the link and then selecting **_Open in new tab_**.
+
+<img src="figs/chp4/Picture10.png" width="2150" style="display: block; margin: auto;" />
+
+-	This will bring you to the [Miniconda download](https://docs.conda.io/en/latest/miniconda.html#windows-installers) page shown above. 
+-	You have installation files for two different Python version (2.7 and 3.8) and for two different Windows systems (32 bit and 64 bit).
+-	We are using **Python 3.8**, so depending on which windows version you are using (32-bit or 64-bit), click on the relevant file in the Python 3.8 section (highlighted in red). 
+-	This will download the Miniconda installation file to your **Downloads folder**. 
+
+<img src="figs/chp4/Picture11.png" width="2150" style="display: block; margin: auto;" />
+
+-	Once the download has finished,navigate to your **Downloads folder** on your computer and double click on the _Miniconda3-latest-Windows-x86_64_ file to start the installation. 
+-	Note: Double-check that you are installing the right version for your system. 
+
+### Installing Minicoda {.unlisted .unnumbered}
+
+<img src="figs/chp4/Inst_1.png" width="520" style="display: block; margin: auto;" />
+
+-	Double clicking the downloaded file will open an installation window. 
+- Click **_Next_** on the first step. 
+
+<img src="figs/chp4/Inst_2.png" width="521" style="display: block; margin: auto;" />
+
+-	Click **_I Agree_** in the next step which is the Terms and Conditions.
+
+<img src="figs/chp4/Inst_3.png" width="515" style="display: block; margin: auto;" />
+
+- In the next window, you can select if you want to install Miniconda for all users or just you.
+- Check that **_Just Me_** is selected and click next. 
+
+<img src="figs/chp4/Inst_4.png" width="516" style="display: block; margin: auto;" />
+
+-	The next window will ask you where to install Miniconda.
+- Leave the path (highlighted in blue) as is and click next. 
+
+<img src="figs/chp4/Inst_5.png" width="517" style="display: block; margin: auto;" />
+-	The next window can be used for an advanced setup
+- Leave the default settings as they are (Box ticked at _Register Miniconda3 as my default Python 3.8_). 
+
+<img src="figs/chp4/Inst_6.png" width="516" style="display: block; margin: auto;" />
+
+-	Miniconda is now installing. 
+- Once the installation is complete, click **_Next_**.
+
+<img src="figs/chp4/Inst_7.png" width="515" style="display: block; margin: auto;" />
+
+•	Untick all boxes in the window (unless you want further information on Miniconda, which will open in your browser) and click **_Finish_**. 
+
+
+### Running Minicoda {.unlisted .unnumbered}
+
+<img src="figs/chp4/Picture20.png" width="2150" style="display: block; margin: auto;" />
+
+- Open Miniconda by clicking on the Windows icon on the bottom left of your screen and either type **_Anaconda_** or look for the **Anaconda folder** in the menu.
+
+<img src="figs/chp4/Picture21.png" width="2149" style="display: block; margin: auto;" />
+
+- To open Miniconda, click on **_Anaconda Prompt (miniconda3)_**.
+**Note:** From now on we will refer to the prompt as **Anaconda Prompt**
+
+<img src="figs/chp4/Conda_1.png" width="982" style="display: block; margin: auto;" />
+
+- This will open the Anaconda command prompt.
+
+
+<img src="figs/chp4/Conda_2.png" width="983" style="display: block; margin: auto;" />
+<img src="figs/chp4/Conda_3.png" width="979" style="display: block; margin: auto;" />
+
+- You now need to navigate to the folder that contains your environment (`_gds_py.yml_`) and setup (`_jl_setup.bat_`) files.
+
+- you can move to the folder by running  `cd` to move forward through folders and `cd ..` to move backwards.
+
+- To run a command you simply press enter. 
+
+- If your files are stored in e.g. C:/Users/Domin/Desktop/GDS_2020 you would write `cd Desktop/GDS_2020`
+  
+- If your files are stored in a different location e.g. E:/Data_science_Tut, you would run `E:`
+(to switch the harddrive) followed by `cd Data_science_Tut`.
+
+<img src="figs/chp4/Conda_4.png" width="979" style="display: block; margin: auto;" />
+
+- Once you have navigated to the location of your files, write the following in the Anaconda prompt and press enter to run it. 
+
+`conda-env create -f gds_py.yml`
+
+- This will install all packages that are required to complete the course and setup your Python environment.
+** Note: This might take a while as it is downloading all packages (~ 500 MB).**
+
+<img src="figs/chp4/Conda_6.png" width="978" style="display: block; margin: auto;" />
+
+- The packages that are being installed will be shown in the Anaconda prompt. 
+
+<img src="figs/chp4/Conda_7.png" width="979" style="display: block; margin: auto;" />
+
+ - Once all packages have been installed and your environment is created, you can activate the environment with the following command:
+
+`conda activate gds`
+
+### Complete environment Setup
+
+We will now complete the setup by installing the user interface (Jupyter Lab) which you will need to code. 
+
+<img src="figs/chp4/Conda_8.png" width="980" style="display: block; margin: auto;" />
+
+- Activate the environment by running :
+
+`conda activate gds`
+
+ - You can see that the start of the line has changed from **(base)** to **(gds)**.
+ 
+<img src="figs/chp4/Conda_9.png" width="980" style="display: block; margin: auto;" />
+
+- In the same prompt, run the following command to complete the environment setup
+
+`jl_setup.bat`
+
+- The prompt will show you the further packages that are being installed. 
+
+**NOTE:** This might take a while depending on your internet connection (at least 10-15 minutes). 
+**NOTE:** Do not close the Anaconda prompt yet as we will need it again. 
+
+
+### Check Installation
+
+To make sure that your installation was successful and all packages have been installed we need to run one more step. 
+
+<img src="figs/chp4/Picture22.png" width="931" style="display: block; margin: auto;" />
+
+- Download the following file [**check_py_stack**](https://raw.githubusercontent.com/darribas/gds_env/master/gds_py/check_py_stack.ipynb) by right clicking on it and selecting **_Save link as_**. 
+- Save the file to the same location as all other files.
+
+<img src="figs/chp4/Conda_11.png" width="978" style="display: block; margin: auto;" />
+
+- Go back to your Anaconda prompt (**make sure your environment is activated `conda activate gds` **) and enter the following command:
+
+`jupyter nbconvert --to html --execute check_py_stack.ipynb`
+
+- This will check if all packages are working properly and produce an output `.html` file called _check_py_stack.html_
+
+
+<img src="figs/chp4/Picture23.png" width="1934" style="display: block; margin: auto;" />
+
+- Double clicking on the _check_py_stack.html_ file will open the file in a browser and you can check if the code has produce an output in all cells. 
+
+
+## Running Python {.unnumbered}
+
+Now that you have successfully installed Python/Anaconda, you are ready to start coding. 
+To launch your coding environment complete the following steps:
+
+1. Start by opening an Anaconda Prompt (see first steps of section 3.2 on how to open an Anaconda prompt).
+
+2. Navigate to the folder that you want to work in (It is recommended to have all your files in one folder with subfolders) using the  `cd` command. 
+
+3. Activate your environment by running `conda activate gds`.
+
+<img src="figs/chp4/Conda_13.png" width="978" style="display: block; margin: auto;" />
+
+4. Run the command `jupyer lab` to start your coding interface. The coding interface will launch in your default browser (We recommend using Chrome or Firefox).
+
+  If your default browser is neither of the recommended, you can close the window that opens automatically, open Chrome/Firefox and past the URL from the Anaconda Prompt. 
+
+<img src="figs/chp4/Picture24.png" width="1923" style="display: block; margin: auto;" />
+5. Jupyter Lab (your coding interface) will open automatically. 
+
+<center>
+**CONGRATULATIONS YOU HAVE NOW SUCCESFULLY INSTALLED PYTHON**
+
+**You can now start coding**
+
+
+![](https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif)
+<center>

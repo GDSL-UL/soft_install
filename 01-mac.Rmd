@@ -1,20 +1,16 @@
-# MacOS Installation {#mac}
+# MacOS Installation {.unnumbered}
 
->Instructions to install, test and run `gds_env` with the Docker for Mac Desktop app.
-### Requirements
-### Install steps
-### Check success
-## Running Python through Docker
+## Installing Python {.unnumbered}
 
-## Downloading Docker for MacOS
+### Requirements {.unlisted .unnumbered}
 
-### Requirements
 1. A stable internet connection
-2. ~1.4GB of space on your hard drive
-2. MacOS version 10.13 or newer i.e. High Sierra, Mojave or Catalina
-3. Mac hardware must be a 2010 model or newer
+2. ~10GB of space on your hard drive
+3. MacOS version 10.13 or newer i.e. High Sierra, Mojave or Catalina. If you are unsure what version you are running click on the apple icon in the top left of the screen and then **About this Mac**.
+4. Mac hardware must be a 2010 model or newer
 
-### Installation steps
+### Installation steps {.unlisted .unnumbered}
+
 1. Go to the [dockerhub website](https://hub.docker.com/editions/community/docker-ce-desktop-mac/).
 2. Ensure you meet the criteria for download (it is the same as stated above) and then select 'Get Stable' button.
 
@@ -52,12 +48,15 @@ You have successfully downloaded Docker!
 
 Next steps: [Using Docker]
 
-## Using Docker
+### Using Docker {.unlisted .unnumbered}
+
 Now we have Docker installed we can use it to access Python and all the associated packages we need for the practicals
 
-### Installing the GDS environment
+### Installing the GDS environment {.unlisted .unnumbered}
+
 1. Access your terminal: **Launchpad** > **Other** > **Terminal**
-2. In a fresh line in the terminal type the following to install the GDS environment container: docker pull darribas/gds:3.0
+2. In a fresh line in the terminal type the following to install the GDS environment container: `docker pull darribas/gds:5.0`
+
 ```{r fig5, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure5.png")
 ```
@@ -67,19 +66,19 @@ knitr::include_graphics("figs/chp1/Figure5.png")
 3. This should now prompt a long download process that looks a bit like this:
 ```{r fig6, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure6.png")
-# need to make these 2 images bigger and clearer
 ```
 Dont be alarmed if it seems to take a very long time.
 
-You will know this has completed when each line says 'Pull complete' and the new line gives your machine name followed by a $ sign.
+You will know this has completed when each line says 'Pull complete' and the new line gives your machine name followed by a `$` sign.
 
-### Running the container
+## Running Python {.unnumbered}
 
-1. In the new terminal line type the following command to run the container: docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:3.0
+### Running the container {.unlisted .unnumbered}
+
+1. In the new terminal line type the following command to run the container: `docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:5.0`
 
 ```{r fig7, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure7.png")
-# need to make this image bigger and clearer
 ```
 
 <br>
@@ -88,14 +87,12 @@ You have now started a Python session.
 
 **NOTE: It is important that you do not close the terminal window until you are finished in this Python session**
 
-2. To access this session go to your chosen web browser (e.g. Safari/Chrome) and type: localhost:8888 into the search bar
+2. To access this session go to your chosen web browser (e.g. Safari/Chrome) and type: `localhost:8888` into the search bar
 
-3. The page that loads will prompt you for a password. This password can be found in the text in the terminal following the last command you ran (step 9). A long series of numbers and letters will be preceded by '?token='. Copy this long series of characters and paste into the password box in your browser.
+3. The page that loads will prompt you for a password. This password can be found in the text in the terminal following the last command you ran (step 9). A long series of numbers and letters will be preceded by `?token=`. Copy this long series of characters and paste into the password box in your browser.
 
 ```{r fig9, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure9.png")
-# all terminal pics need to be bigger and clearer
-
 ```
 
 <br>
@@ -115,9 +112,9 @@ knitr::include_graphics("figs/chp1/Figure11.png")
 [Using Jupyter Notebook]
 
 
-## Using Jupyter Notebook
+### Using Jupyter Notebook {.unlisted .unnumbered}
 
-- This notebook is where you will run your code. Each shaded box is called a kernel. To test this out you can type 'print('test')' into one of these kernels. To run the code use the shortcut Ctrl + Enter.
+- This notebook is where you will run your code. Each shaded box is called a kernel. To test this out you can type `print('test')` into one of these kernels. To run the code use the shortcut `Ctrl + Enter`.
 
 ```{r fig12, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure12.png")
@@ -126,7 +123,7 @@ knitr::include_graphics("figs/chp1/Figure12.png")
 <br>
 
 
-- You can save your notebook using **File** > **Save notebook as** 
+- You can save your notebook using **File** > **Save notebook as**
 ```{r fig13, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure13.png")
 ```
@@ -140,16 +137,30 @@ knitr::include_graphics("figs/chp1/Figure14.png")
 
 <br>
 
+- And you can access other files on your machine through the 'Work' folder in the File Browser. From here you can navigate to your Documents and designated folder for this module
+
+```{r fig15a, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp1/Figure15a.png")
+```
+
+```{r fig15b, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp1/Figure15b.png")
+```
+
+```{r fig15c, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp1/Figure15c.png")
+```
+<br>
+
 [Ending your session]
 
-## Ending your session
-
+### Ending your session {.unlisted .unnumbered}
 Once you have finished in your Jupyter session and have saved all your work, you can end the session from the terminal.
 
-Using Ctrl+C will prompt a y/n option. Either type y or Ctrl + C again to end the session. 
+Using `Ctrl + C` will prompt a `y/n` option. Either type `y` or `Ctrl + C` again to end the session. 
 
-```{r fig15, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure15.png")
+```{r fig16, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp1/Figure16.png")
 ```
 
 <br>
@@ -158,6 +169,4 @@ You can now safely shut the terminal window.
 
 <br>
 
-Next time you go to run a Jupyter Notebook you will not need to repeat the whole process as you have already installed Docker and the GDS environment. Instead you can start from Section 2.2: [Running the container] and carry on from there.
-
-
+Next time you go to run a Jupyter Notebook you will not need to repeat the whole process as you have already installed Docker and the GDS environment. Instead you can start from [Running the container] and carry on from there.

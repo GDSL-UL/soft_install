@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.8.9)  8 SEP 2020 23:35
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.10.1)  2 OCT 2020 00:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **installation-guide.tex
 (./installation-guide.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-08-07> (/Users/franciscorowe/Library/TinyTeX/texmf-d
+L3 programming layer <2020-09-24> (/Users/franciscorowe/Library/TinyTeX/texmf-d
 ist/tex/latex/base/book.cls
 Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
 (/Users/franciscorowe/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo
@@ -137,11 +137,11 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 (/Users/franciscorowe/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode
 -math.sty (/Users/franciscorowe/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/e
 xpl3.sty
-Package: expl3 2020-08-07 L3 programming layer (loader) 
+Package: expl3 2020-09-24 L3 programming layer (loader) 
 
 (/Users/franciscorowe/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-
-xdvipdfmx.def
-File: l3backend-xdvipdfmx.def 2020-08-07 L3 backend support: xdvipdfmx
+xetex.def
+File: l3backend-xetex.def 2020-09-24 L3 backend support: XeTeX
 \g__graphics_track_int=\count185
 \l__pdf_internal_box=\box47
 \g__pdf_backend_object_int=\count186
@@ -242,7 +242,7 @@ Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 
 (/Users/franciscorowe/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.st
 y
-Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
 (/Users/franciscorowe/Library/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkey
 s.sty
@@ -263,7 +263,7 @@ Package xcolor Info: Driver file: xetex.def on input line 225.
 
 (/Users/franciscorowe/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.d
 ef
-File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+File: xetex.def 2020/08/26 v5.0i Graphics/color driver for xetex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -489,56 +489,8 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip61
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count296
-) (./installation-guide.aux
-
-LaTeX Warning: Label `installation-via-docker' multiply defined.
-
-
-LaTeX Warning: Label `installing-docker' multiply defined.
-
-
-LaTeX Warning: Label `installing-python' multiply defined.
-
-
-LaTeX Warning: Label `running-python' multiply defined.
-
-
-LaTeX Warning: Label `native-installation' multiply defined.
-
-
-LaTeX Warning: Label `remote-access' multiply defined.
-
-
-LaTeX Warning: Label `installation-via-docker' multiply defined.
-
-
-LaTeX Warning: Label `installing-docker' multiply defined.
-
-
-LaTeX Warning: Label `installing-python' multiply defined.
-
-
-LaTeX Warning: Label `running-python' multiply defined.
-
-
-LaTeX Warning: Label `native-installation' multiply defined.
-
-
-LaTeX Warning: Label `remote-access' multiply defined.
-
-
-LaTeX Warning: Label `installing-python' multiply defined.
-
-
-LaTeX Warning: Label `running-python' multiply defined.
-
-
-LaTeX Warning: Label `native-installation' multiply defined.
-
-
-LaTeX Warning: Label `remote-access' multiply defined.
-
 )
+No file installation-guide.aux.
 \openout1 = `installation-guide.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
@@ -858,9 +810,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 85.
 LaTeX Info: Redefining \pageref on input line 85.
 LaTeX Info: Redefining \nameref on input line 85.
-(./installation-guide.out) (./installation-guide.out)
 \@outlinefile=\write3
 \openout3 = `installation-guide.out'.
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 87.
@@ -905,85 +859,503 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ] [2
 
-] (./installation-guide.toc
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 2.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 2.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 2.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 2.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 2.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 2.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 2.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 2.
-)
+]
 \tf@toc=\write4
 \openout4 = `installation-guide.toc'.
 
 [3] [4
 
 ]
-Chapter 1.
-File: figs/mac_linux_win10.png Graphic file (type bmp)
-<figs/mac_linux_win10.png>
+File: figs/intro/tree.jpeg Graphic file (type bmp)
+<figs/intro/tree.jpeg>
 
-Overfull \hbox (770.2213pt too wide) in paragraph at lines 129--130
- [][] 
+Overfull \hbox (633.99265pt too wide) in paragraph at lines 100--100
+ [] 
  []
 
 
-LaTeX Warning: Float too large for page by 36.51376pt on input line 134.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[5] [6]
-File: figs/other_win.png Graphic file (type bmp)
-<figs/other_win.png>
+[5] [6] [7] [8
 
-Overfull \hbox (848.2555pt too wide) in paragraph at lines 145--146
- [][] 
+]
+File: figs/chp1/Figure1.png Graphic file (type bmp)
+<figs/chp1/Figure1.png>
+
+Overfull \hbox (979.76477pt too wide) in paragraph at lines 150--150
+ [] 
  []
 
-[7] [8]
-Chapter 2.
-[9
 
-] [10
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
-Chapter 3.
-[11] [12
+[9]
+File: figs/chp1/Figure2.png Graphic file (type bmp)
+<figs/chp1/Figure2.png>
 
-]
-Chapter 4.
-[13] [14
+Overfull \hbox (663.82785pt too wide) in paragraph at lines 160--160
+ [] 
+ []
 
-]
-Chapter 5.
-No file installation-guide.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 310.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[12]
+File: figs/chp1/Figure3.png Graphic file (type bmp)
+<figs/chp1/Figure3.png>
+
+Overfull \hbox (377.70926pt too wide) in paragraph at lines 170--170
+ [] 
+ []
+
+File: figs/chp1/Figure4.png Graphic file (type bmp)
+<figs/chp1/Figure4.png>
+
+Overfull \hbox (472.07544pt too wide) in paragraph at lines 182--182
+ [] 
+ []
+
+[13]
+File: figs/chp1/Figure5.png Graphic file (type bmp)
+<figs/chp1/Figure5.png>
+
+Overfull \hbox (228.83698pt too wide) in paragraph at lines 207--207
+ [] 
+ []
+
+File: figs/chp1/Figure6.png Graphic file (type bmp)
+<figs/chp1/Figure6.png>
+
+Overfull \hbox (228.83698pt too wide) in paragraph at lines 217--217
+ [] 
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+\TU/lmtt/m/n/10 docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work
+ []
+
+File: figs/chp1/Figure7.png Graphic file (type bmp)
+<figs/chp1/Figure7.png>
+
+Overfull \hbox (228.83698pt too wide) in paragraph at lines 238--238
+ [] 
+ []
+
 [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
-(./installation-guide.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 310.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 310.
-Package rerunfilecheck Info: File `installation-guide.out' has not changed.
-(rerunfilecheck)             Checksum: BD33ACDB2BBB78C41634FD8C3A3EB091;2705.
+File: figs/chp1/Figure9.png Graphic file (type bmp)
+<figs/chp1/Figure9.png>
 
-LaTeX Warning: There were multiply-defined labels.
+Overfull \hbox (228.83698pt too wide) in paragraph at lines 253--253
+ [] 
+ []
 
- ) 
+[16]
+File: figs/chp1/Figure10.png Graphic file (type bmp)
+<figs/chp1/Figure10.png>
+
+Overfull \hbox (733.27362pt too wide) in paragraph at lines 255--255
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[17] [18]
+File: figs/chp1/Figure11.png Graphic file (type bmp)
+<figs/chp1/Figure11.png>
+
+Overfull \hbox (702.76714pt too wide) in paragraph at lines 265--265
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[19] [20]
+File: figs/chp1/Figure12.png Graphic file (type bmp)
+<figs/chp1/Figure12.png>
+
+Overfull \hbox (1046.21535pt too wide) in paragraph at lines 279--279
+ [] 
+ []
+
+File: figs/chp1/Figure13.png Graphic file (type bmp)
+<figs/chp1/Figure13.png>
+
+Overfull \hbox (734.01215pt too wide) in paragraph at lines 287--287
+ [] 
+ []
+
+[21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[22]
+File: figs/chp1/Figure14.png Graphic file (type bmp)
+<figs/chp1/Figure14.png>
+
+Overfull \hbox (738.0932pt too wide) in paragraph at lines 295--295
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[23]
+Underfull \vbox (badness 1565) has occurred while \output is active []
+
+[24]
+File: figs/chp1/Figure15a.png Graphic file (type bmp)
+<figs/chp1/Figure15a.png>
+
+Overfull \hbox (734.01215pt too wide) in paragraph at lines 303--303
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[25]
+File: figs/chp1/Figure15b.png Graphic file (type bmp)
+<figs/chp1/Figure15b.png>
+
+Overfull \hbox (734.01215pt too wide) in paragraph at lines 305--305
+ [] 
+ []
+
+
+Underfull \vbox (badness 1596) has occurred while \output is active []
+
+[26]
+File: figs/chp1/Figure15c.png Graphic file (type bmp)
+<figs/chp1/Figure15c.png>
+
+Overfull \hbox (734.01215pt too wide) in paragraph at lines 307--307
+ [] 
+ []
+
+
+Underfull \vbox (badness 1596) has occurred while \output is active []
+
+[27]
+Underfull \vbox (badness 1596) has occurred while \output is active []
+
+[28]
+File: figs/chp1/Figure16.png Graphic file (type bmp)
+<figs/chp1/Figure16.png>
+
+Overfull \hbox (235.16605pt too wide) in paragraph at lines 319--319
+ [] 
+ []
+
+[29] [30
+
+] [31] [32
+
+] [33] [34
+
+]
+File: figs/chp4/Picture4.png Graphic file (type bmp)
+<figs/chp4/Picture4.png>
+
+Overfull \hbox (209.16289pt too wide) in paragraph at lines 387--387
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[35]
+File: figs/chp4/Picture5.png Graphic file (type bmp)
+<figs/chp4/Picture5.png>
+
+Overfull \hbox (715.56293pt too wide) in paragraph at lines 403--403
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[36] [37]
+File: figs/chp4/Picture6.png Graphic file (type bmp)
+<figs/chp4/Picture6.png>
+
+Overfull \hbox (264.15532pt too wide) in paragraph at lines 427--427
+ [] 
+ []
+
+File: figs/chp4/Picture6_1.png Graphic file (type bmp)
+<figs/chp4/Picture6_1.png>
+
+Overfull \hbox (663.26413pt too wide) in paragraph at lines 435--435
+ [] 
+ []
+
+
+Underfull \vbox (badness 1331) has occurred while \output is active []
+
+[38] [39]
+File: figs/chp4/Picture7.png Graphic file (type bmp)
+<figs/chp4/Picture7.png>
+
+Overfull \hbox (308.37033pt too wide) in paragraph at lines 456--456
+ [] 
+ []
+
+[40]
+File: figs/chp4/Picture8.png Graphic file (type bmp)
+<figs/chp4/Picture8.png>
+
+Overfull \hbox (172.74126pt too wide) in paragraph at lines 464--464
+ [] 
+ []
+
+File: figs/chp4/Picture10.png Graphic file (type bmp)
+<figs/chp4/Picture10.png>
+
+Overfull \hbox (172.94266pt too wide) in paragraph at lines 484--484
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[41]
+File: figs/chp4/Picture11.png Graphic file (type bmp)
+<figs/chp4/Picture11.png>
+
+Overfull \hbox (172.95847pt too wide) in paragraph at lines 498--498
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[42]
+File: figs/chp4/Inst_1.png Graphic file (type bmp)
+<figs/chp4/Inst_1.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[43]
+File: figs/chp4/Inst_2.png Graphic file (type bmp)
+<figs/chp4/Inst_2.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[44]
+File: figs/chp4/Inst_3.png Graphic file (type bmp)
+<figs/chp4/Inst_3.png>
+[45]
+File: figs/chp4/Inst_4.png Graphic file (type bmp)
+<figs/chp4/Inst_4.png>
+File: figs/chp4/Inst_5.png Graphic file (type bmp)
+<figs/chp4/Inst_5.png>
+[46]
+File: figs/chp4/Inst_6.png Graphic file (type bmp)
+<figs/chp4/Inst_6.png>
+File: figs/chp4/Inst_7.png Graphic file (type bmp)
+<figs/chp4/Inst_7.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[47]
+File: figs/chp4/Picture20.png Graphic file (type bmp)
+<figs/chp4/Picture20.png>
+
+Overfull \hbox (172.98218pt too wide) in paragraph at lines 578--578
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[48]
+File: figs/chp4/Picture21.png Graphic file (type bmp)
+<figs/chp4/Picture21.png>
+
+Overfull \hbox (172.69386pt too wide) in paragraph at lines 586--586
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[49]
+File: figs/chp4/Conda_1.png Graphic file (type bmp)
+<figs/chp4/Conda_1.png>
+
+Overfull \hbox (246.46832pt too wide) in paragraph at lines 595--595
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[50]
+File: figs/chp4/Conda_2.png Graphic file (type bmp)
+<figs/chp4/Conda_2.png>
+
+Overfull \hbox (247.07967pt too wide) in paragraph at lines 603--603
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[51]
+File: figs/chp4/Conda_3.png Graphic file (type bmp)
+<figs/chp4/Conda_3.png>
+
+Overfull \hbox (244.6614pt too wide) in paragraph at lines 605--605
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[52]
+Overfull \hbox (15.15001pt too wide) in paragraph at lines 617--619
+\TU/lmr/m/n/10 you would run \TU/lmtt/m/n/10 E: \TU/lmr/m/n/10 (to switch the h
+arddrive) followed by \TU/lmtt/m/n/10 cd Data_science_Tut\TU/lmr/m/n/10 . 
+ []
+
+File: figs/chp4/Conda_4.png Graphic file (type bmp)
+<figs/chp4/Conda_4.png>
+
+Overfull \hbox (244.6884pt too wide) in paragraph at lines 621--621
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[53]
+File: figs/chp4/Conda_6.png Graphic file (type bmp)
+<figs/chp4/Conda_6.png>
+
+Overfull \hbox (244.10406pt too wide) in paragraph at lines 638--638
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[54]
+File: figs/chp4/Conda_7.png Graphic file (type bmp)
+<figs/chp4/Conda_7.png>
+
+Overfull \hbox (244.6884pt too wide) in paragraph at lines 646--646
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[55]
+File: figs/chp4/Conda_8.png Graphic file (type bmp)
+<figs/chp4/Conda_8.png>
+
+Overfull \hbox (245.27274pt too wide) in paragraph at lines 661--661
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[56]
+File: figs/chp4/Conda_9.png Graphic file (type bmp)
+<figs/chp4/Conda_9.png>
+
+Overfull \hbox (245.29976pt too wide) in paragraph at lines 677--677
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[57]
+File: figs/chp4/Picture22.png Graphic file (type bmp)
+<figs/chp4/Picture22.png>
+
+Overfull \hbox (356.00737pt too wide) in paragraph at lines 701--701
+ [] 
+ []
+
+
+Underfull \vbox (badness 5504) has occurred while \output is active []
+
+[58]
+File: figs/chp4/Conda_11.png Graphic file (type bmp)
+<figs/chp4/Conda_11.png>
+
+Overfull \hbox (244.05014pt too wide) in paragraph at lines 711--711
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[59]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 716.
+File: figs/chp4/Picture23.png Graphic file (type bmp)
+<figs/chp4/Picture23.png>
+
+Overfull \hbox (639.97473pt too wide) in paragraph at lines 727--727
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[60] [61]
+File: figs/chp4/Conda_13.png Graphic file (type bmp)
+<figs/chp4/Conda_13.png>
+
+Overfull \hbox (244.05014pt too wide) in paragraph at lines 752--752
+ [] 
+ []
+
+[62]
+File: figs/chp4/Picture24.png Graphic file (type bmp)
+<figs/chp4/Picture24.png>
+
+Overfull \hbox (670.07222pt too wide) in paragraph at lines 764--764
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[63] [64]
+
+LaTeX Warning: File `https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif
+' not found on input line 778.
+
+
+! LaTeX Error: File `https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif
+' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.778 ...y.com/media/PiQejEf31116URju4V/giphy.gif}
+                                                   
 Here is how much of TeX's memory you used:
- 18336 strings out of 481691
- 328542 string characters out of 5932082
- 756311 words of memory out of 5000000
- 35169 multiletter control sequences out of 15000+600000
- 541539 words of font info for 82 fonts, out of 8000000 for 9000
+ 18845 strings out of 481673
+ 339989 string characters out of 5931565
+ 754425 words of memory out of 5000000
+ 35641 multiletter control sequences out of 15000+600000
+ 538710 words of font info for 66 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 58i,6n,118p,817b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,6n,118p,817b,398s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on installation-guide.pdf (15 pages).
+Output written on installation-guide.pdf (64 pages).
