@@ -29,4 +29,4 @@ Select your Operating System and follow the steps.
 
 <mark> **A4** [Windows Home or pre-10 Installation](otherwin.html) </mark>
 
-*Need to find out your Windows version?* Click [HERE](version.html)
+*Need to find out your Windows version?* Click [HERE](windows-version)
