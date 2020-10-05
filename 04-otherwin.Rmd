@@ -11,6 +11,16 @@ If you are unsure what version of Windows you are running, please check out [thi
 
 ## Installation {#otherWin_install .unnumbered}
 
+This process involves a few steps:
+
+1. [Requirements](#otherwin_reqs): gather everything you will need before getting started
+1. [Miniconda Install](miniconda_install): install the programme that will allow you to install Python
+1. [GDS Environment](#otherWin_gds): turbo charge your Python installation
+1. [Extra addon's](#otherWin_addons): put the final touches on the install
+1. [Success check](#otherWin_check): certify everything went smoothly
+
+Make sure you complete each successfully before moving on to the next.
+
 ### Requirements {#otherwin_reqs .unlisted .unnumbered}
 
 To complete successfully this installation route, you will need the following:
@@ -59,7 +69,7 @@ knitr::include_graphics("figs/chp4/Picture10.png")
 For the sake of this guide, we will assume you download the two files (`gds_py.yml` and `jl_setup.bat`) and the Miniconda installer on the Desktop folder (`C:\Users\username\Desktop`). You do not need to choose this folder but, if you use a different one, please adjust all instructions below accordingly.
 
 
-### Minicoda Install {.unlisted .unnumbered}
+### Minicoda Install {#miniconda_install .unlisted .unnumbered}
 
 The next step is to install the copy of Miniconda we just downloaded. To do that, follow these steps:
 
@@ -169,7 +179,7 @@ This has created correctly the `gds` environment, congratulations! We are _almos
 conda activate gds
 ```
 
-### Complete environment Setup {.unlisted .unnumbered}
+### Complete environment Setup {#otherWin_addons .unlisted .unnumbered}
 
 The final step involves installing a few addon's that will make interacting with data a lot smoother and fun. Let's get to it!
 
@@ -204,7 +214,7 @@ When this completes, you are all set to go, congratulations!!!
 
 **NOTE:** Do not close the Anaconda prompt yet as we will need it again in the next section, to check everything is alright. 
 
-### Check Installation {.unlisted .unnumbered}
+### Check Installation {#otherWin_check .unlisted .unnumbered}
 
 To make sure that your installation was successful and all packages have been installed we need to run one more thing. Here're the steps to follow:
 

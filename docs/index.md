@@ -18,7 +18,8 @@ This guide provides step-by-step description on how to install and access Python
 
 Select your Operating System and follow the steps.
 
-<img src="figs/intro/tree.jpeg" width="647" style="display: block; margin: auto;" />
+
+\begin{center}\includegraphics[width=17.97in]{figs/intro/tree} \end{center}
 
 
 <mark> **A1** [MacOS Installation](macos-installation.html) </mark>

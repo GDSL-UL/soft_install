@@ -81,7 +81,11 @@
 <li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#linux_install"><i class="fa fa-check"></i>Installation</a></li>
 <li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#linux_run"><i class="fa fa-check"></i>Running Python</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html"><i class="fa fa-check"></i>Windows 10 Pro/Student Installation</a></li>
+<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html"><i class="fa fa-check"></i>Windows 10 Pro/Education</a>
+<ul>
+<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_install"><i class="fa fa-check"></i>Installation</a></li>
+<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_run"><i class="fa fa-check"></i>Running Python</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="otherWin.html"><a href="otherWin.html"><i class="fa fa-check"></i>Windows 10 Home/pre-10</a>
 <ul>
 <li class="chapter" data-level="" data-path="otherWin.html"><a href="otherWin.html#otherWin_install"><i class="fa fa-check"></i>Installation</a></li>
@@ -118,6 +122,15 @@
 </div>
 <div id="otherWin_install" class="section level2 unnumbered">
 <h2>Installation</h2>
+<p>This process involves a few steps:</p>
+<ol style="list-style-type: decimal">
+<li><a href="otherWin.html#otherwin_reqs">Requirements</a>: gather everything you will need before getting started</li>
+<li><a href="miniconda_install">Miniconda Install</a>: install the programme that will allow you to install Python</li>
+<li><a href="otherWin.html#otherWin_gds">GDS Environment</a>: turbo charge your Python installation</li>
+<li><a href="otherWin.html#otherWin_addons">Extra addon’s</a>: put the final touches on the install</li>
+<li><a href="otherWin.html#otherWin_check">Success check</a>: certify everything went smoothly</li>
+</ol>
+<p>Make sure you complete each successfully before moving on to the next.</p>
 <div id="otherwin_reqs" class="section level3 unlisted unnumbered">
 <h3>Requirements</h3>
 <p>To complete successfully this installation route, you will need the following:</p>
@@ -155,7 +168,7 @@
 </div>
 <p>For the sake of this guide, we will assume you download the two files (<code>gds_py.yml</code> and <code>jl_setup.bat</code>) and the Miniconda installer on the Desktop folder (<code>C:\Users\username\Desktop</code>). You do not need to choose this folder but, if you use a different one, please adjust all instructions below accordingly.</p>
 </div>
-<div id="minicoda-install" class="section level3 unlisted unnumbered">
+<div id="miniconda_install" class="section level3 unlisted unnumbered">
 <h3>Minicoda Install</h3>
 <p>The next step is to install the copy of Miniconda we just downloaded. To do that, follow these steps:</p>
 <ol style="list-style-type: decimal">
@@ -227,7 +240,7 @@
 </ol>
 <pre class="shell"><code>conda activate gds</code></pre>
 </div>
-<div id="complete-environment-setup" class="section level3 unlisted unnumbered">
+<div id="otherWin_addons" class="section level3 unlisted unnumbered">
 <h3>Complete environment Setup</h3>
 <p>The final step involves installing a few addon’s that will make interacting with data a lot smoother and fun. Let’s get to it!</p>
 <ol style="list-style-type: decimal">
@@ -248,7 +261,7 @@
 <p>When this completes, you are all set to go, congratulations!!!</p>
 <p><strong>NOTE:</strong> Do not close the Anaconda prompt yet as we will need it again in the next section, to check everything is alright.</p>
 </div>
-<div id="check-installation" class="section level3 unlisted unnumbered">
+<div id="otherWin_check" class="section level3 unlisted unnumbered">
 <h3>Check Installation</h3>
 <p>To make sure that your installation was successful and all packages have been installed we need to run one more thing. Here’re the steps to follow:</p>
 <ol style="list-style-type: decimal">

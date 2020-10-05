@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Windows 10 Pro/Student Installation | Software Installation Guide</title>
+  <title>Windows 10 Pro/Education | Software Installation Guide</title>
   <meta name="description" content="Installation Guide for R and Python" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Windows 10 Pro/Student Installation | Software Installation Guide" />
+  <meta property="og:title" content="Windows 10 Pro/Education | Software Installation Guide" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="GDSL-UL/soft_install" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Windows 10 Pro/Student Installation | Software Installation Guide" />
+  <meta name="twitter:title" content="Windows 10 Pro/Education | Software Installation Guide" />
   
   <meta name="twitter:description" content="Installation Guide for R and Python" />
   
@@ -81,7 +81,11 @@
 <li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#linux_install"><i class="fa fa-check"></i>Installation</a></li>
 <li class="chapter" data-level="" data-path="linux.html"><a href="linux.html#linux_run"><i class="fa fa-check"></i>Running Python</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html"><i class="fa fa-check"></i>Windows 10 Pro/Student Installation</a></li>
+<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html"><i class="fa fa-check"></i>Windows 10 Pro/Education</a>
+<ul>
+<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_install"><i class="fa fa-check"></i>Installation</a></li>
+<li class="chapter" data-level="" data-path="win10pro.html"><a href="win10pro.html#winpro_run"><i class="fa fa-check"></i>Running Python</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="otherWin.html"><a href="otherWin.html"><i class="fa fa-check"></i>Windows 10 Home/pre-10</a>
 <ul>
 <li class="chapter" data-level="" data-path="otherWin.html"><a href="otherWin.html#otherWin_install"><i class="fa fa-check"></i>Installation</a></li>
@@ -110,8 +114,157 @@
 
             <section class="normal" id="section-">
 <div id="win10pro" class="section level1 unnumbered">
-<h1>Windows 10 Pro/Student Installation</h1>
+<h1>Windows 10 Pro/Education</h1>
+<p><strong>NOTE</strong> This guide shows you how to install on Windows 10 Pro the <code>gds_env</code> <span class="citation">(Arribas-Bel <a href="#ref-gds_env" role="doc-biblioref">2019</a>)</span></p>
+<div id="winpro_install" class="section level2 unnumbered">
+<h2>Installation</h2>
+<div id="requirements" class="section level3 unlisted unnumbered">
+<h3>Requirements</h3>
+<p>To be able to complete this guide, your machine will need to meet the following requirements:</p>
+<ol style="list-style-type: decimal">
+<li>A stable internet connection</li>
+<li>~10GB of space on your hard drive</li>
+<li>Windows 10 64-bit: Pro, Enterprise, or Education (Build 16299 or later). You can see the full requirements on the official <a href="https://docs.docker.com/docker-for-windows/install/">Docker for Windows page</a>.</li>
+</ol>
+<div class="alert alert-danger" style="font-size:120%">
+<p><b>IMPORTANT</b>: <br></p>
+<p>If you are not sure what version of Windows you are running, check out this <a href="windows-version.html#windows-version">guide</a>.</p>
+<p>If you know you don’t have Windows 10 Pro, for example you are running Windows 10 Home, please use <a href="otherWin.html#otherWin">this install/run guide</a>.</p>
+</div>
+</div>
+<div id="winpro_docker_install" class="section level3 unlisted unnumbered">
+<h3>Docker install steps</h3>
+<p>Once you have everything required ready to go, the first step is to install the Docker Desktop App for Windows. Here are the steps you can follow:</p>
+<ol style="list-style-type: decimal">
+<li>Head over to Docker Hub to download a copy of Docker for Windows:</li>
+</ol>
+<blockquote>
+<p><a href="https://hub.docker.com/editions/community/docker-ce-desktop-windows/">https://hub.docker.com/editions/community/docker-ce-desktop-windows/</a></p>
+</blockquote>
+<p><img src="figs/chp3/docker_hub.png" width="750" style="display: block; margin: auto;" />
+<br></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Download a copy of the Stable version (circled in red on the image above). Note this is about 400Mb so, depending on your connection, it might take a little bit.</li>
+<li>Double click on the file you downloaded (a white cute whale on a blue background) and the “installation wizard” will appear.</li>
+<li>Follow the instructions on the installation wizard to authorize the installer and proceed with the install.</li>
+</ol>
+<p>You can check the process has completed successfully by following these steps:</p>
+<ol style="list-style-type: decimal">
+<li>Open PowelShell from the “Start Menu”</li>
+</ol>
+<p><img src="figs/chp3/powershell.png" width="656" style="display: block; margin: auto;" />
+<br></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Check Docker is available by printint out the version you have installed:</li>
+</ol>
+<pre class="shell"><code>docker --version</code></pre>
+<p><img src="figs/chp3/docker_version.png" width="598" style="display: block; margin: auto;" />
+<br></p>
+<p>Note that you might have installed a slightly different version and that is totally OK. What you want to make sure is that it successfully prints out a version instead of a warning/error message (usually in red).</p>
+</div>
+<div id="winpro_docker_gds" class="section level3 unlisted unnumbered">
+<h3>Installing the GDS container</h3>
+<p>Once you have Docker installed and running on your machine, installing everything you need to run Python and associated libraries boils down to the following two steps:</p>
+<ol style="list-style-type: decimal">
+<li>Open PowerShell following the same steps as above (you can use the same window as before or a fresh new one).</li>
+<li>Run (type and hit “Enter”) the following command:</li>
+</ol>
+<pre class="shell"><code>docker pull darribas/gds:5.0</code></pre>
+<p><img src="figs/chp3/pull_gds.png" width="614" style="display: block; margin: auto;" />
+<br></p>
+<p>You will know this has completed when each line says ‘Pull complete’.</p>
+<div class="alert alert-info" style="font-size:120%">
+<p><b>IMPORTANT</b>: <br></p>
+<p>Make sure you are connected to the internet and it is a stable connection. This step involves the download of large amounts of data (ca. 10GB) so it might take a while. However, it only needs to be run once.</p>
+</div>
+</div>
+<div id="winpro_success" class="section level3 unlisted unnumbered">
+<h3>Check success</h3>
+<p>If everything has gone according to plan, you should see <code>darribas/gds:5.0</code> show up on your terminal when you type <code>docker image ls</code> (note in the image below there are other containers that are not required, do not worry if you don’t have those or slightly different values on the ID and the “CREATED” columns, the important bit is having <code>darribas/gds:5.0</code> listed):</p>
+<p><img src="figs/chp3/docker_success.png" width="614" style="display: block; margin: auto;" />
+<br></p>
+</div>
+</div>
+<div id="winpro_run" class="section level2 unnumbered">
+<h2>Running Python</h2>
+<p>The following sections cover how to start up the software you have just installed, use it, and shut it down when you are done.</p>
+<div id="running-the-container" class="section level3 unlisted unnumbered">
+<h3>Running the container</h3>
+<p>To start up Python through Docker, follow these steps:</p>
+<ol style="list-style-type: decimal">
+<li>In a new PowerShell window, type the following command to run the container and hit enter:</li>
+</ol>
+<pre class="shell"><code>docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:5.0</code></pre>
+<p><img src="figs/chp3/docker_run.png" width="614" style="display: block; margin: auto;" /></p>
+<p><br></p>
+<p>You have now started a Python session.</p>
+<div class="alert alert-info" style="font-size:120%">
+<p><b>IMPORTANT</b>: <br></p>
+<p>Please do NOT close the PowerShell window until you are finished in this Python session</p>
+</div>
+<ol start="2" style="list-style-type: decimal">
+<li>To access this session go to your chosen web browser (e.g. Firefox/Chrome) and type: <code>localhost:8888</code> into the search bar. You should see something similar to:</li>
+</ol>
+<p><br></p>
+<p><img src="figs/chp3/jupyter_token.png" width="696" style="display: block; margin: auto;" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>The page that loads will prompt you for a password or a token. This can be found in the text in the terminal following the last command you ran. This will be a long series of numbers and letters will be preceded by <code>?token=</code>. Copy this long series of characters and paste into the password box in your browser.</li>
+</ol>
+<p><img src="figs/chp3/docker_token.png" width="614" style="display: block; margin: auto;" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Now you are in Jupyter Lab, it should look like this, more or less:</li>
+</ol>
+<p><img src="figs/chp3/lab.png" width="696" style="display: block; margin: auto;" /></p>
+<p><br></p>
+</div>
+<div id="using-jupyter-notebook" class="section level3 unlisted unnumbered">
+<h3>Using Jupyter Notebook</h3>
+<ul>
+<li>This notebook is where you will run your code. Each shaded box is called a kernel. To test this out you can type <code>print('test')</code> into one of these kernels. To run the code use the shortcut <code>Ctrl + Enter</code>.</li>
+</ul>
+<p><img src="figs/chp1/Figure12.png" width="693" style="display: block; margin: auto;" /></p>
+<p><br></p>
+<div class="alert alert-info" style="font-size:120%">
+<p><b>IMPORTANT</b>: <br></p>
+<p>Make sure you save files you want to keep <strong>ONLY</strong> <em>within</em> the <code>work</code> folder, as this will ensure they are saved on your machine.</p>
+<p>Everything saved outside the <code>work</code> folder will be <em>destroyed</em> as soon as you shut down the session.</p>
+</div>
+<ul>
+<li>You can save your notebook using <strong>File</strong> &gt; <strong>Save notebook as</strong>
+<img src="figs/chp1/Figure13.png" width="538" style="display: block; margin: auto;" /></li>
+</ul>
+<p><br></p>
+<ul>
+<li>You can create new folders to organise your work
+<img src="figs/chp1/Figure14.png" width="540" style="display: block; margin: auto;" /></li>
+</ul>
+<p><br></p>
+<ul>
+<li>And you can access other files on your machine through the ‘work’ folder in the File Browser. From here you can navigate to your Documents and designated folder for this module</li>
+</ul>
+<p><img src="figs/chp1/Figure15a.png" width="538" style="display: block; margin: auto;" /></p>
+<p><img src="figs/chp1/Figure15b.png" width="538" style="display: block; margin: auto;" /></p>
+<p><img src="figs/chp1/Figure15c.png" width="538" style="display: block; margin: auto;" />
+<br></p>
+</div>
+<div id="ending-your-session" class="section level3 unlisted unnumbered">
+<h3>Ending your session</h3>
+<p>Once you have finished in your Jupyter session and have saved all your work, you can end the session from the terminal.</p>
+<p>Using <code>Ctrl + C</code> will prompt a <code>y/n</code> option. Either type <code>y</code> or <code>Ctrl + C</code> again to end the session.</p>
+<p><img src="figs/chp3/docker_end.png" width="614" style="display: block; margin: auto;" /></p>
+<p><br></p>
+<p>You can now safely shut the terminal window.</p>
+<p><br></p>
+<p>Next time you go to run a Jupyter Notebook you will not need to repeat the whole process as you have already installed Docker and the GDS environment. Instead you can start from <a href="win10pro.html#winpro_run">Running Python through Docker</a> and carry on from there.</p>
 
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-gds_env">
+<p>Arribas-Bel, Dani. 2019. <em><code>gds_env</code>: A Containerised Platform for Geographic Data Science</em> (version 5.0). <a href="https://darribas.org/gds_env">https://darribas.org/gds_env</a>.</p>
+</div>
 </div>
             </section>
 
