@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>MacOS Installation | Software Installation Guide</title>
+  <title>Linux Installation | Software Installation Guide</title>
   <meta name="description" content="Installation Guide for R and Python" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="MacOS Installation | Software Installation Guide" />
+  <meta property="og:title" content="Linux Installation | Software Installation Guide" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="GDSL-UL/soft_install" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="MacOS Installation | Software Installation Guide" />
+  <meta name="twitter:title" content="Linux Installation | Software Installation Guide" />
   
   <meta name="twitter:description" content="Installation Guide for R and Python" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="linux.html"/>
+<link rel="prev" href="macos-installation.html"/>
+<link rel="next" href="win10pro.html"/>
 <script src="libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -109,10 +109,10 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="macos-installation" class="section level1 unnumbered">
-<h1>MacOS Installation</h1>
+<div id="linux" class="section level1 unnumbered">
+<h1>Linux Installation</h1>
 <p><strong>NOTE</strong> This guide shows you how to install on Linux the <code>gds_env</code> <span class="citation">(Arribas-Bel <a href="#ref-gds_env" role="doc-biblioref">2019</a>)</span></p>
-<div id="installation" class="section level2 unnumbered">
+<div id="linux_install" class="section level2 unnumbered">
 <h2>Installation</h2>
 <div id="requirements" class="section level3 unlisted unnumbered">
 <h3>Requirements</h3>
@@ -120,54 +120,42 @@
 <ol style="list-style-type: decimal">
 <li>A stable internet connection</li>
 <li>~10GB of space on your hard drive</li>
-<li>MacOS version 10.13 or newer i.e. High Sierra, Mojave or Catalina. If you are unsure what version you are running click on the apple icon in the top left of the screen and then <strong>About this Mac</strong>.</li>
-<li>Mac hardware must be a 2010 model or newer</li>
+<li>A Linux distribution supported by Docker. You can check available distributions for ready installation on <a href="https://hub.docker.com/search?q=&amp;type=edition&amp;offering=community&amp;operating_system=linux">this page</a>.</li>
 </ol>
+<p><strong>NOTE</strong> If you are running a different distribution (e.g. Arch Linux), there is a good chance Docker <em>will</em> work, but you will have to source your own instructions for installation. Once you have Docker up and running on your machine, you can move to <a href="linux.html#installing-the-gds-container">Installing the GDS container</a>.</p>
 </div>
 <div id="docker-install-steps" class="section level3 unlisted unnumbered">
 <h3>Docker install steps</h3>
 <ol style="list-style-type: decimal">
-<li>Go to the <a href="https://hub.docker.com/editions/community/docker-ce-desktop-mac/">dockerhub website</a>.</li>
-<li>Ensure you meet the criteria for download (it is the same as stated above) and then select ‘Get Stable’ button.</li>
+<li>Select the page for your distribution from the <a href="https://hub.docker.com/search?q=&amp;type=edition&amp;offering=community&amp;operating_system=linux">Docker Hub list of supported distributions</a></li>
 </ol>
-<p><img src="figs/chp1/Figure1.png" width="660" style="display: block; margin: auto;" />
+<p><img src="figs/chp2/docker_distros.png" width="893" style="display: block; margin: auto;" />
+<br></p>
+<p>For this example, we will use Ubuntu.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Make sure that you meet the requirements to install Docker:</li>
+</ol>
+<p><img src="figs/chp2/ubuntu.png" width="894" style="display: block; margin: auto;" />
 <br></p>
 <ol start="3" style="list-style-type: decimal">
-<li>This will then download to your machine but may take some time. Once finished, to access this download go to <strong>Finder</strong> &gt; <strong>Downloads</strong> &gt; <strong>Docker.dmg</strong> and double click.</li>
+<li>Follow the steps specified on the official install guide:</li>
 </ol>
-<p><img src="figs/chp1/Figure2.png" width="502" style="display: block; margin: auto;" /></p>
-<p><br></p>
-<ol start="4" style="list-style-type: decimal">
-<li>You should then be prompted to drag and drop this application into the applications folder like so:</li>
-</ol>
-<p><img src="figs/chp1/Figure3.png" width="360" style="display: block; margin: auto;" />
-You may get further windows asking for access to the program. To these you can click <strong>Open</strong> &gt; <strong>Ok</strong> &gt; enter your account password and click <strong>Install helper</strong></p>
-<p><br></p>
-<ol start="5" style="list-style-type: decimal">
-<li>After you have done this, the whale icon should now show in your taskbar:
-<img src="figs/chp1/Figure4.png" width="407" style="display: block; margin: auto;" /></li>
-</ol>
-<p><br></p>
-<p>You have successfully downloaded Docker!</p>
+<blockquote>
+<p><a href="https://docs.docker.com/engine/install/ubuntu/">https://docs.docker.com/engine/install/ubuntu/</a></p>
+</blockquote>
+<p>Once you complete these steps successfully, you will have Docker ready to go on your computer, congratulations!</p>
 </div>
-<div id="using-docker" class="section level3 unlisted unnumbered">
-<h3>Using Docker</h3>
-<p>Now we have Docker installed we can use it to access Python and all the associated packages we need for the practicals</p>
-</div>
-<div id="installing-the-gds-environment" class="section level3 unlisted unnumbered">
-<h3>Installing the GDS environment</h3>
+<div id="installing-the-gds-container" class="section level3 unlisted unnumbered">
+<h3>Installing the GDS container</h3>
+<p>Once you have Docker installed and running on your machine, installing everything you need to run Python and associated libraries boils down to the following two steps:</p>
 <ol style="list-style-type: decimal">
-<li>Access your terminal: <strong>Launchpad</strong> &gt; <strong>Other</strong> &gt; <strong>Terminal</strong></li>
-<li>In a fresh line in the terminal type the following to install the GDS environment container:</li>
+<li>Open your terminal app of choice (for example, Gnome Terminal)</li>
+<li>Run the following command:</li>
 </ol>
 <pre class="shell"><code>docker pull darribas/gds:5.0</code></pre>
-<p><img src="figs/chp1/Figure5.png" width="286" style="display: block; margin: auto;" /></p>
-<p><br></p>
-<ol start="3" style="list-style-type: decimal">
-<li>This should now prompt a long download process that looks a bit like this:
-<img src="figs/chp1/Figure6.png" width="286" style="display: block; margin: auto;" />
-Dont be alarmed if it seems to take a very long time.</li>
-</ol>
+<p><img src="figs/chp2/terminal_pull.png" width="689" style="display: block; margin: auto;" />
+<br></p>
+<p>You will know this has completed when each line says ‘Pull complete’.</p>
 <div class="alert alert-info" style="font-size:120%">
 <p><b>IMPORTANT</b>: <br></p>
 <p>Make sure you are connected to the internet and it is a stable connection. This step involves the download of large amounts of data (ca. 10GB) so it might take a while. However, it only needs to be run once.</p>
@@ -175,21 +163,22 @@ Dont be alarmed if it seems to take a very long time.</li>
 </div>
 <div id="check-success" class="section level3 unlisted unnumbered">
 <h3>Check success</h3>
-<p>You will know the process has completed successfully when each line says ‘Pull complete’ and the new line gives your machine name followed by a <code>$</code> sign.</p>
 <p>If everything has gone according to plan, you should see <code>darribas/gds:5.0</code> show up on your terminal when you type <code>docker image ls</code> (note in the image below there are other containers that are not required, do not worry if you don’t have those or slightly different values on the ID and the “CREATED” columns, the important bit is having <code>darribas/gds:5.0</code> listed):</p>
 <p><img src="figs/chp2/docker_image_ls.png" width="689" style="display: block; margin: auto;" />
 <br></p>
 </div>
 </div>
-<div id="running-python" class="section level2 unnumbered">
+<div id="linux_run" class="section level2 unnumbered">
 <h2>Running Python</h2>
-<p>The following sections cover how to spin up a session you have just installed, use it, and shut it down when you are done.</p>
+<p>The following sections cover how to spin up the container you have just installed, use it, and shut it down when you are done.</p>
 <div id="running-the-container" class="section level3 unlisted unnumbered">
 <h3>Running the container</h3>
+<p>To start up Python through Docker, follow these steps:</p>
 <ol style="list-style-type: decimal">
-<li>In the new terminal line type the following command to run the container: <code>docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:5.0</code></li>
+<li>In a new terminal line, type the following command to run the container and hit enter:</li>
 </ol>
-<p><img src="figs/chp1/Figure7.png" width="286" style="display: block; margin: auto;" /></p>
+<pre class="shell"><code>docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:5.0</code></pre>
+<p><img src="figs/chp2/docker_run.png" width="689" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <p>You have now started a Python session.</p>
 <div class="alert alert-info" style="font-size:120%">
@@ -197,14 +186,14 @@ Dont be alarmed if it seems to take a very long time.</li>
 <p>Please do NOT close the terminal window until you are finished in this Python session</p>
 </div>
 <ol start="2" style="list-style-type: decimal">
-<li>To access this session go to your chosen web browser (e.g. Safari/Chrome) and type: <code>localhost:8888</code> into the search bar</li>
+<li>To access this session go to your chosen web browser (e.g. Firefox/Chrome) and type: <code>localhost:8888</code> into the search bar</li>
 </ol>
+<p><br></p>
 <p><img src="figs/chp1/Figure10.png" width="568" style="display: block; margin: auto;" /></p>
 <ol start="3" style="list-style-type: decimal">
 <li>The page that loads will prompt you for a password or a token. This can be found in the text in the terminal following the last command you ran (step 9). A long series of numbers and letters will be preceded by <code>?token=</code>. Copy this long series of characters and paste into the password box in your browser.</li>
 </ol>
-<p><img src="figs/chp1/Figure9.png" width="286" style="display: block; margin: auto;" /></p>
-<p><br></p>
+<p><img src="figs/chp2/docker_token.png" width="864" style="display: block; margin: auto;" /></p>
 <ol start="4" style="list-style-type: decimal">
 <li>Now you are in Jupyter Lab you can open up a Python 3 notebook</li>
 </ol>
@@ -234,7 +223,7 @@ Dont be alarmed if it seems to take a very long time.</li>
 </ul>
 <p><br></p>
 <ul>
-<li>And you can access other files on your machine through the ‘Work’ folder in the File Browser. From here you can navigate to your Documents and designated folder for this module</li>
+<li>And you can access other files on your machine through the ‘work’ folder in the File Browser. From here you can navigate to your Documents and designated folder for this module</li>
 </ul>
 <p><img src="figs/chp1/Figure15a.png" width="538" style="display: block; margin: auto;" /></p>
 <p><img src="figs/chp1/Figure15b.png" width="538" style="display: block; margin: auto;" /></p>
@@ -245,11 +234,11 @@ Dont be alarmed if it seems to take a very long time.</li>
 <h3>Ending your session</h3>
 <p>Once you have finished in your Jupyter session and have saved all your work, you can end the session from the terminal.</p>
 <p>Using <code>Ctrl + C</code> will prompt a <code>y/n</code> option. Either type <code>y</code> or <code>Ctrl + C</code> again to end the session.</p>
-<p><img src="figs/chp1/Figure16.png" width="289" style="display: block; margin: auto;" /></p>
+<p><img src="figs/chp2/docker_end.png" width="864" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <p>You can now safely shut the terminal window.</p>
 <p><br></p>
-<p>Next time you go to run a Jupyter Notebook you will not need to repeat the whole process as you have already installed Docker and the GDS environment. Instead you can start from <a href="macos-installation.html#running-the-container">Running the container</a> and carry on from there.</p>
+<p>Next time you go to run a Jupyter Notebook you will not need to repeat the whole process as you have already installed Docker and the GDS environment. Instead you can start from [Running Python through Docker] and carry on from there.</p>
 
 </div>
 </div>
@@ -265,8 +254,8 @@ Dont be alarmed if it seems to take a very long time.</li>
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="linux.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="macos-installation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="win10pro.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -1,8 +1,8 @@
-# Linux Installation {.unnumbered}
+# Linux Installation {#linux .unnumbered}
 
 **NOTE** This guide shows you how to install on Linux the `gds_env` [@gds_env]
 
-## Installation {.unnumbered}
+## Installation {#linux_install .unnumbered}
 
 ### Requirements {.unlisted .unnumbered}
 
@@ -64,7 +64,7 @@ If everything has gone according to plan, you should see `darribas/gds:5.0` show
 <img src="figs/chp2/docker_image_ls.png" width="689" style="display: block; margin: auto;" />
 <br>
 
-## Running Python {.unnumbered}
+## Running Python {#linux_run .unnumbered}
 
 The following sections cover how to spin up the container you have just installed, use it, and shut it down when you are done.
 
