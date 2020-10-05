@@ -1,8 +1,8 @@
-# Linux Installation {.unnumbered}
+# Linux Installation {#linux .unnumbered}
 
 **NOTE** This guide shows you how to install on Linux the `gds_env` [@gds_env]
 
-## Installation {.unnumbered}
+## Installation {#linux_install .unnumbered}
 
 ### Requirements {.unlisted .unnumbered}
 
@@ -72,7 +72,7 @@ knitr::include_graphics("figs/chp2/docker_image_ls.png")
 ```
 <br>
 
-## Running Python {.unnumbered}
+## Running Python {#linux_run .unnumbered}
 
 The following sections cover how to spin up the container you have just installed, use it, and shut it down when you are done.
 
