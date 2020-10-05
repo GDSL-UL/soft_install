@@ -74,35 +74,35 @@ It can either be 32 bit or 64 bit (most modern computers use 64 bit).
 
 ### Installing Minicoda {.unlisted .unnumbered}
 
-<img src="figs/chp4/Inst_1.png" width="260" style="display: block; margin: auto;" />
+<img src="figs/chp4/inst_1.PNG" width="260" style="display: block; margin: auto;" />
 
 -	Double clicking the downloaded file will open an installation window. 
 - Click **_Next_** on the first step. 
 
-<img src="figs/chp4/Inst_2.png" width="260" style="display: block; margin: auto;" />
+<img src="figs/chp4/inst_2.PNG" width="260" style="display: block; margin: auto;" />
 
 -	Click **_I Agree_** in the next step which is the Terms and Conditions.
 
-<img src="figs/chp4/Inst_3.png" width="258" style="display: block; margin: auto;" />
+<img src="figs/chp4/inst_3.PNG" width="258" style="display: block; margin: auto;" />
 
 - In the next window, you can select if you want to install Miniconda for all users or just you.
 - Check that **_Just Me_** is selected and click next. 
 
-<img src="figs/chp4/Inst_4.png" width="258" style="display: block; margin: auto;" />
+<img src="figs/chp4/inst_4.PNG" width="258" style="display: block; margin: auto;" />
 
 -	The next window will ask you where to install Miniconda.
 - Leave the path (highlighted in blue) as is and click next. 
 
-<img src="figs/chp4/Inst_5.png" width="258" style="display: block; margin: auto;" />
+<img src="figs/chp4/inst_5.PNG" width="258" style="display: block; margin: auto;" />
 -	The next window can be used for an advanced setup
 - Leave the default settings as they are (Box ticked at _Register Miniconda3 as my default Python 3.8_). 
 
-<img src="figs/chp4/Inst_6.png" width="258" style="display: block; margin: auto;" />
+<img src="figs/chp4/inst_6.PNG" width="258" style="display: block; margin: auto;" />
 
 -	Miniconda is now installing. 
 - Once the installation is complete, click **_Next_**.
 
-<img src="figs/chp4/Inst_7.png" width="258" style="display: block; margin: auto;" />
+<img src="figs/chp4/inst_7.PNG" width="258" style="display: block; margin: auto;" />
 
 •	Untick all boxes in the window (unless you want further information on Miniconda, which will open in your browser) and click **_Finish_**. 
 
@@ -118,13 +118,13 @@ It can either be 32 bit or 64 bit (most modern computers use 64 bit).
 - To open Miniconda, click on **_Anaconda Prompt (miniconda3)_**.
 **Note:** From now on we will refer to the prompt as **Anaconda Prompt**
 
-<img src="figs/chp4/Conda_1.png" width="491" style="display: block; margin: auto;" />
+<img src="figs/chp4/Conda_1.PNG" width="491" style="display: block; margin: auto;" />
 
 - This will open the Anaconda command prompt.
 
 
-<img src="figs/chp4/Conda_2.png" width="492" style="display: block; margin: auto;" />
-<img src="figs/chp4/Conda_3.png" width="490" style="display: block; margin: auto;" />
+<img src="figs/chp4/Conda_2.PNG" width="492" style="display: block; margin: auto;" />
+<img src="figs/chp4/Conda_3.PNG" width="490" style="display: block; margin: auto;" />
 
 - You now need to navigate to the folder that contains your environment (`_gds_py.yml_`) and setup (`_jl_setup.bat_`) files.
 
@@ -137,7 +137,7 @@ It can either be 32 bit or 64 bit (most modern computers use 64 bit).
 - If your files are stored in a different location e.g. E:/Data_science_Tut, you would run `E:`
 (to switch the harddrive) followed by `cd Data_science_Tut`.
 
-<img src="figs/chp4/Conda_4.png" width="490" style="display: block; margin: auto;" />
+<img src="figs/chp4/Conda_4.PNG" width="490" style="display: block; margin: auto;" />
 
 - Once you have navigated to the location of your files, write the following in the Anaconda prompt and press enter to run it. 
 
@@ -146,11 +146,11 @@ It can either be 32 bit or 64 bit (most modern computers use 64 bit).
 - This will install all packages that are required to complete the course and setup your Python environment.
 ** Note: This might take a while as it is downloading all packages (~ 500 MB).**
 
-<img src="figs/chp4/Conda_6.png" width="489" style="display: block; margin: auto;" />
+<img src="figs/chp4/Conda_6.PNG" width="489" style="display: block; margin: auto;" />
 
 - The packages that are being installed will be shown in the Anaconda prompt. 
 
-<img src="figs/chp4/Conda_7.png" width="490" style="display: block; margin: auto;" />
+<img src="figs/chp4/Conda_7.PNG" width="490" style="display: block; margin: auto;" />
 
  - Once all packages have been installed and your environment is created, you can activate the environment with the following command:
 
@@ -160,7 +160,7 @@ It can either be 32 bit or 64 bit (most modern computers use 64 bit).
 
 We will now complete the setup by installing the user interface (Jupyter Lab) which you will need to code. 
 
-<img src="figs/chp4/Conda_8.png" width="490" style="display: block; margin: auto;" />
+<img src="figs/chp4/Conda_8.PNG" width="490" style="display: block; margin: auto;" />
 
 - Activate the environment by running :
 
@@ -168,7 +168,7 @@ We will now complete the setup by installing the user interface (Jupyter Lab) wh
 
  - You can see that the start of the line has changed from **(base)** to **(gds)**.
  
-<img src="figs/chp4/Conda_9.png" width="490" style="display: block; margin: auto;" />
+<img src="figs/chp4/Conda_9.PNG" width="490" style="display: block; margin: auto;" />
 
 - In the same prompt, run the following command to complete the environment setup
 
@@ -189,7 +189,7 @@ To make sure that your installation was successful and all packages have been in
 - Download the following file [**check_py_stack**](https://raw.githubusercontent.com/darribas/gds_env/master/gds_py/check_py_stack.ipynb) by right clicking on it and selecting **_Save link as_**. 
 - Save the file to the same location as all other files.
 
-<img src="figs/chp4/Conda_11.png" width="489" style="display: block; margin: auto;" />
+<img src="figs/chp4/Conda_11.PNG" width="489" style="display: block; margin: auto;" />
 
 - Go back to your Anaconda prompt (**make sure your environment is activated `conda activate gds` **) and enter the following command:
 
@@ -214,7 +214,7 @@ To launch your coding environment complete the following steps:
 
 3. Activate your environment by running `conda activate gds`.
 
-<img src="figs/chp4/Conda_13.png" width="489" style="display: block; margin: auto;" />
+<img src="figs/chp4/Conda_13.PNG" width="489" style="display: block; margin: auto;" />
 
 4. Run the command `jupyer lab` to start your coding interface. The coding interface will launch in your default browser (We recommend using Chrome or Firefox).
 

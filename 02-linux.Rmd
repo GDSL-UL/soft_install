@@ -14,7 +14,7 @@ To be able to complete this guide, your machine will need to meet the following 
 
 **NOTE** If you are running a different distribution (e.g. Arch Linux), there is a good chance Docker _will_ work, but you will have to source your own instructions for installation. Once you have Docker up and running on your machine, you can move to [Installing the GDS container].
 
-### Docker Install steps {.unlisted .unnumbered}
+### Docker install steps {.unlisted .unnumbered}
 
 1. Select the page for your distribution from the [Docker Hub list of supported distributions](https://hub.docker.com/search?q=&type=edition&offering=community&operating_system=linux)
 

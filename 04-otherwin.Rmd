@@ -91,47 +91,47 @@ knitr::include_graphics("figs/chp4/Picture11.png")
 ### Installing Minicoda {.unlisted .unnumbered}
 
 ```{r inst1, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Inst_1.png")
+knitr::include_graphics("figs/chp4/inst_1.PNG")
 ```
 
 -	Double clicking the downloaded file will open an installation window. 
 - Click **_Next_** on the first step. 
 
 ```{r Inst2, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Inst_2.png")
+knitr::include_graphics("figs/chp4/inst_2.PNG")
 ```
 
 -	Click **_I Agree_** in the next step which is the Terms and Conditions.
 
 ```{r Inst_3, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Inst_3.png")
+knitr::include_graphics("figs/chp4/inst_3.PNG")
 ```
 
 - In the next window, you can select if you want to install Miniconda for all users or just you.
 - Check that **_Just Me_** is selected and click next. 
 
 ```{r Inst4, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Inst_4.png")
+knitr::include_graphics("figs/chp4/inst_4.PNG")
 ```
 
 -	The next window will ask you where to install Miniconda.
 - Leave the path (highlighted in blue) as is and click next. 
 
 ```{r Inst_5, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Inst_5.png")
+knitr::include_graphics("figs/chp4/inst_5.PNG")
 ```
 -	The next window can be used for an advanced setup
 - Leave the default settings as they are (Box ticked at _Register Miniconda3 as my default Python 3.8_). 
 
 ```{r Inst6, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Inst_6.png")
+knitr::include_graphics("figs/chp4/inst_6.PNG")
 ```
 
 -	Miniconda is now installing. 
 - Once the installation is complete, click **_Next_**.
 
 ```{r Inst7, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Inst_7.png")
+knitr::include_graphics("figs/chp4/inst_7.PNG")
 ```
 
 •	Untick all boxes in the window (unless you want further information on Miniconda, which will open in your browser) and click **_Finish_**. 
@@ -153,17 +153,17 @@ knitr::include_graphics("figs/chp4/Picture21.png")
 **Note:** From now on we will refer to the prompt as **Anaconda Prompt**
 
 ```{r Conda1, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Conda_1.png")
+knitr::include_graphics("figs/chp4/Conda_1.PNG")
 ```
 
 - This will open the Anaconda command prompt.
 
 
 ```{r Conda2, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Conda_2.png")
+knitr::include_graphics("figs/chp4/Conda_2.PNG")
 ```
 ```{r Conda3, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Conda_3.png")
+knitr::include_graphics("figs/chp4/Conda_3.PNG")
 ```
 
 - You now need to navigate to the folder that contains your environment (`_gds_py.yml_`) and setup (`_jl_setup.bat_`) files.
@@ -178,7 +178,7 @@ knitr::include_graphics("figs/chp4/Conda_3.png")
 (to switch the harddrive) followed by `cd Data_science_Tut`.
 
 ```{r Conda4, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Conda_4.png")
+knitr::include_graphics("figs/chp4/Conda_4.PNG")
 ```
 
 - Once you have navigated to the location of your files, write the following in the Anaconda prompt and press enter to run it. 
@@ -189,13 +189,13 @@ knitr::include_graphics("figs/chp4/Conda_4.png")
 ** Note: This might take a while as it is downloading all packages (~ 500 MB).**
 
 ```{r Conda6, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Conda_6.png")
+knitr::include_graphics("figs/chp4/Conda_6.PNG")
 ```
 
 - The packages that are being installed will be shown in the Anaconda prompt. 
 
 ```{r Conda7, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Conda_7.png")
+knitr::include_graphics("figs/chp4/Conda_7.PNG")
 ```
 
  - Once all packages have been installed and your environment is created, you can activate the environment with the following command:
@@ -207,7 +207,7 @@ knitr::include_graphics("figs/chp4/Conda_7.png")
 We will now complete the setup by installing the user interface (Jupyter Lab) which you will need to code. 
 
 ```{r Conda8, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Conda_8.png")
+knitr::include_graphics("figs/chp4/Conda_8.PNG")
 ```
 
 - Activate the environment by running :
@@ -217,7 +217,7 @@ knitr::include_graphics("figs/chp4/Conda_8.png")
  - You can see that the start of the line has changed from **(base)** to **(gds)**.
  
 ```{r Conda9, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Conda_9.png")
+knitr::include_graphics("figs/chp4/Conda_9.PNG")
 ```
 
 - In the same prompt, run the following command to complete the environment setup
@@ -242,7 +242,7 @@ knitr::include_graphics("figs/chp4/Picture22.png")
 - Save the file to the same location as all other files.
 
 ```{r Conda_11, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Conda_11.png")
+knitr::include_graphics("figs/chp4/Conda_11.PNG")
 ```
 
 - Go back to your Anaconda prompt (**make sure your environment is activated `conda activate gds` **) and enter the following command:
@@ -271,7 +271,7 @@ To launch your coding environment complete the following steps:
 3. Activate your environment by running `conda activate gds`.
 
 ```{r Conda13, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp4/Conda_13.png")
+knitr::include_graphics("figs/chp4/Conda_13.PNG")
 ```
 
 4. Run the command `jupyer lab` to start your coding interface. The coding interface will launch in your default browser (We recommend using Chrome or Firefox).
