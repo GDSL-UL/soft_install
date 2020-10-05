@@ -27,8 +27,8 @@ knitr::include_graphics("figs/intro/tree.jpeg")
 
 <mark> **A2** [Linux Installation](linux-installation.html) </mark>
 
-<mark> **A3** [Windows 10 Pro/Student Installation](windows-10-prostudent-installation) </mark>
+<mark> **A3** [Windows 10 Pro/Education](win10pro.html) </mark>
 
-<mark> **A4** [Windows Home or pre-10 Installation](windows-home-or-pre-10-installation.html) </mark>
+<mark> **A4** [Windows 10 Home/pre-10](otherWin.html) </mark>
 
-*Need to find out your Windows version?* Click [HERE](windows-version)
+*Need to find out your Windows version?* Click [HERE](windows-version.html)

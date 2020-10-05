@@ -1,6 +1,6 @@
 # MacOS Installation {.unnumbered}
 
-**NOTE** This guide shows you how to install on Linux the `gds_env` [@gds_env]
+**NOTE** This guide shows you how to install on Linux via the `gds_env` [@gds_env]
 
 ## Installation {.unnumbered}
 
@@ -10,7 +10,7 @@ To be able to complete this guide, your machine will need to meet the following 
 
 1. A stable internet connection
 2. ~10GB of space on your hard drive
-3. MacOS version 10.13 or newer i.e. High Sierra, Mojave or Catalina. If you are unsure what version you are running click on the apple icon in the top left of the screen and then **About this Mac**.
+3. MacOS version 10.13 or newer i.e. High Sierra, Mojave or Catalina. If you are unsure what version you are running click on the Apple icon in the top left of the screen and then **About this Mac**.
 4. Mac hardware must be a 2010 model or newer
 
 ### Docker install steps {.unlisted .unnumbered}
@@ -18,29 +18,25 @@ To be able to complete this guide, your machine will need to meet the following 
 1. Go to the [dockerhub website](https://hub.docker.com/editions/community/docker-ce-desktop-mac/).
 2. Ensure you meet the criteria for download (it is the same as stated above) and then select 'Get Stable' button.
 
-
-\begin{center}\includegraphics[width=18.33in]{figs/chp1/Figure1} \end{center}
+<img src="figs/chp1/Figure1.png" width="660" style="display: block; margin: auto;" />
 <br>
 
 3. This will then download to your machine but may take some time. Once finished, to access this download go to **Finder** > **Downloads** > **Docker.dmg** and double click.
 
-
-\begin{center}\includegraphics[width=13.96in]{figs/chp1/Figure2} \end{center}
+<img src="figs/chp1/Figure2.png" width="502" style="display: block; margin: auto;" />
 
 <br>
 
 4. You should then be prompted to drag and drop this application into the applications folder like so:
 
-
-\begin{center}\includegraphics[width=10in]{figs/chp1/Figure3} \end{center}
+<img src="figs/chp1/Figure3.png" width="360" style="display: block; margin: auto;" />
 You may get further windows asking for access to the program. To these you can click **Open** > **Ok** > enter your account password and click **Install helper**
 
 <br>
 
 
 5. After you have done this, the whale icon should now show in your taskbar:
-
-\begin{center}\includegraphics[width=11.31in]{figs/chp1/Figure4} \end{center}
+<img src="figs/chp1/Figure4.png" width="407" style="display: block; margin: auto;" />
 
 <br>
 
@@ -59,14 +55,12 @@ Now we have Docker installed we can use it to access Python and all the associat
 docker pull darribas/gds:5.0
 ```
 
-
-\begin{center}\includegraphics[width=7.94in]{figs/chp1/Figure5} \end{center}
+<img src="figs/chp1/Figure5.png" width="286" style="display: block; margin: auto;" />
 
 <br>
 
 3. This should now prompt a long download process that looks a bit like this:
-
-\begin{center}\includegraphics[width=7.94in]{figs/chp1/Figure6} \end{center}
+<img src="figs/chp1/Figure6.png" width="286" style="display: block; margin: auto;" />
 Dont be alarmed if it seems to take a very long time.
 
 <div class="alert alert-info" style="font-size:120%">
@@ -82,8 +76,7 @@ You will know the process has completed successfully when each line says 'Pull c
 
 If everything has gone according to plan, you should see `darribas/gds:5.0` show up on your terminal when you type `docker image ls` (note in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gds:5.0` listed):
 
-
-\begin{center}\includegraphics[width=19.14in]{figs/chp2/docker_image_ls} \end{center}
+<img src="figs/chp2/docker_image_ls.png" width="689" style="display: block; margin: auto;" />
 <br>
 
 ## Running Python {.unnumbered}
@@ -94,8 +87,7 @@ The following sections cover how to spin up a session you have just installed, u
 
 1. In the new terminal line type the following command to run the container: `docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:5.0`
 
-
-\begin{center}\includegraphics[width=7.94in]{figs/chp1/Figure7} \end{center}
+<img src="figs/chp1/Figure7.png" width="286" style="display: block; margin: auto;" />
 
 <br>
 
@@ -110,20 +102,17 @@ Please do NOT close the terminal window until you are finished in this Python se
 
 2. To access this session go to your chosen web browser (e.g. Safari/Chrome) and type: `localhost:8888` into the search bar
 
-
-\begin{center}\includegraphics[width=15.79in]{figs/chp1/Figure10} \end{center}
+<img src="figs/chp1/Figure10.png" width="568" style="display: block; margin: auto;" />
 
 3. The page that loads will prompt you for a password or a token. This can be found in the text in the terminal following the last command you ran (step 9). A long series of numbers and letters will be preceded by `?token=`. Copy this long series of characters and paste into the password box in your browser.
 
-
-\begin{center}\includegraphics[width=7.94in]{figs/chp1/Figure9} \end{center}
+<img src="figs/chp1/Figure9.png" width="286" style="display: block; margin: auto;" />
 
 <br>
 
 4. Now you are in Jupyter Lab you can open up a Python 3 notebook
 
-
-\begin{center}\includegraphics[width=19.21in]{figs/chp1/Figure11} \end{center}
+<img src="figs/chp1/Figure11.png" width="692" style="display: block; margin: auto;" />
 
 <br>
 
@@ -131,8 +120,7 @@ Please do NOT close the terminal window until you are finished in this Python se
 
 - This notebook is where you will run your code. Each shaded box is called a kernel. To test this out you can type `print('test')` into one of these kernels. To run the code use the shortcut `Ctrl + Enter`.
 
-
-\begin{center}\includegraphics[width=19.25in]{figs/chp1/Figure12} \end{center}
+<img src="figs/chp1/Figure12.png" width="693" style="display: block; margin: auto;" />
 
 <br>
 
@@ -147,27 +135,22 @@ Everything saved outside the `work` folder will be _destroyed_ as soon as you sh
 
 
 - You can save your notebook using **File** > **Save notebook as**
-
-\begin{center}\includegraphics[width=14.93in]{figs/chp1/Figure13} \end{center}
+<img src="figs/chp1/Figure13.png" width="538" style="display: block; margin: auto;" />
 
 <br>
 
 - You can create new folders to organise your work
-
-\begin{center}\includegraphics[width=14.99in]{figs/chp1/Figure14} \end{center}
+<img src="figs/chp1/Figure14.png" width="540" style="display: block; margin: auto;" />
 
 <br>
 
 - And you can access other files on your machine through the 'Work' folder in the File Browser. From here you can navigate to your Documents and designated folder for this module
 
+<img src="figs/chp1/Figure15a.png" width="538" style="display: block; margin: auto;" />
 
-\begin{center}\includegraphics[width=14.93in]{figs/chp1/Figure15a} \end{center}
+<img src="figs/chp1/Figure15b.png" width="538" style="display: block; margin: auto;" />
 
-
-\begin{center}\includegraphics[width=14.93in]{figs/chp1/Figure15b} \end{center}
-
-
-\begin{center}\includegraphics[width=14.93in]{figs/chp1/Figure15c} \end{center}
+<img src="figs/chp1/Figure15c.png" width="538" style="display: block; margin: auto;" />
 <br>
 
 ### Ending your session {.unlisted .unnumbered}
@@ -175,8 +158,7 @@ Once you have finished in your Jupyter session and have saved all your work, you
 
 Using `Ctrl + C` will prompt a `y/n` option. Either type `y` or `Ctrl + C` again to end the session. 
 
-
-\begin{center}\includegraphics[width=8.03in]{figs/chp1/Figure16} \end{center}
+<img src="figs/chp1/Figure16.png" width="289" style="display: block; margin: auto;" />
 
 <br>
 

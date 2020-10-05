@@ -18,16 +18,15 @@ This guide provides step-by-step description on how to install and access Python
 
 Select your Operating System and follow the steps.
 
-
-\begin{center}\includegraphics[width=17.97in]{figs/intro/tree} \end{center}
+<img src="figs/intro/tree.jpeg" width="647" style="display: block; margin: auto;" />
 
 
 <mark> **A1** [MacOS Installation](macos-installation.html) </mark>
 
 <mark> **A2** [Linux Installation](linux-installation.html) </mark>
 
-<mark> **A3** [Windows 10 Pro/Student Installation](windows-10-prostudent-installation) </mark>
+<mark> **A3** [Windows 10 Pro/Education](win10pro.html) </mark>
 
-<mark> **A4** [Windows Home or pre-10 Installation](windows-home-or-pre-10-installation.html) </mark>
+<mark> **A4** [Windows 10 Home/pre-10](otherWin.html) </mark>
 
-*Need to find out your Windows version?* Click [HERE](windows-version)
+*Need to find out your Windows version?* Click [HERE](windows-version.html)

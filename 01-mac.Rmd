@@ -1,6 +1,6 @@
 # MacOS Installation {.unnumbered}
 
-**NOTE** This guide shows you how to install on Linux the `gds_env` [@gds_env]
+**NOTE** This guide shows you how to install on Linux via the `gds_env` [@gds_env]
 
 ## Installation {.unnumbered}
 
@@ -10,7 +10,7 @@ To be able to complete this guide, your machine will need to meet the following 
 
 1. A stable internet connection
 2. ~10GB of space on your hard drive
-3. MacOS version 10.13 or newer i.e. High Sierra, Mojave or Catalina. If you are unsure what version you are running click on the apple icon in the top left of the screen and then **About this Mac**.
+3. MacOS version 10.13 or newer i.e. High Sierra, Mojave or Catalina. If you are unsure what version you are running click on the Apple icon in the top left of the screen and then **About this Mac**.
 4. Mac hardware must be a 2010 model or newer
 
 ### Docker install steps {.unlisted .unnumbered}

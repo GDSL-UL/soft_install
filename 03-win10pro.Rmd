@@ -1,6 +1,6 @@
 # Windows 10 Pro/Education {#win10pro .unnumbered}
 
-**NOTE** This guide shows you how to install on Windows 10 Pro the `gds_env` [@gds_env]
+**NOTE** This guide shows you how to install on Windows 10 Pro via the `gds_env` [@gds_env]
 
 ## Installation {#winpro_install .unnumbered}
 
@@ -47,7 +47,7 @@ knitr::include_graphics("figs/chp3/powershell.png")
 ```
 <br>
 
-2. Check Docker is available by printint out the version you have installed:
+2. Check Docker is available by printing out the version you have installed:
 
 ```shell
 docker --version

@@ -1,6 +1,6 @@
 # Linux Installation {#linux .unnumbered}
 
-**NOTE** This guide shows you how to install on Linux the `gds_env` [@gds_env]
+**NOTE** This guide shows you how to install on Linux via the `gds_env` [@gds_env]
 
 ## Installation {#linux_install .unnumbered}
 

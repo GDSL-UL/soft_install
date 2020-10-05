@@ -1,6 +1,6 @@
 # Linux Installation {#linux .unnumbered}
 
-**NOTE** This guide shows you how to install on Linux the `gds_env` [@gds_env]
+**NOTE** This guide shows you how to install on Linux via the `gds_env` [@gds_env]
 
 ## Installation {#linux_install .unnumbered}
 
@@ -18,16 +18,14 @@ To be able to complete this guide, your machine will need to meet the following 
 
 1. Select the page for your distribution from the [Docker Hub list of supported distributions](https://hub.docker.com/search?q=&type=edition&offering=community&operating_system=linux)
 
-
-\begin{center}\includegraphics[width=24.81in]{figs/chp2/docker_distros} \end{center}
+<img src="figs/chp2/docker_distros.png" width="893" style="display: block; margin: auto;" />
 <br>
 
 For this example, we will use Ubuntu.
 
 2. Make sure that you meet the requirements to install Docker:
 
-
-\begin{center}\includegraphics[width=24.83in]{figs/chp2/ubuntu} \end{center}
+<img src="figs/chp2/ubuntu.png" width="894" style="display: block; margin: auto;" />
 <br>
 
 3. Follow the steps specified on the official install guide:
@@ -47,8 +45,7 @@ Once you have Docker installed and running on your machine, installing everythin
 docker pull darribas/gds:5.0
 ```
 
-
-\begin{center}\includegraphics[width=19.14in]{figs/chp2/terminal_pull} \end{center}
+<img src="figs/chp2/terminal_pull.png" width="689" style="display: block; margin: auto;" />
 <br>
 
 You will know this has completed when each line says 'Pull complete'.
@@ -64,8 +61,7 @@ Make sure you are connected to the internet and it is a stable connection. This 
 
 If everything has gone according to plan, you should see `darribas/gds:5.0` show up on your terminal when you type `docker image ls` (note in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gds:5.0` listed):
 
-
-\begin{center}\includegraphics[width=19.14in]{figs/chp2/docker_image_ls} \end{center}
+<img src="figs/chp2/docker_image_ls.png" width="689" style="display: block; margin: auto;" />
 <br>
 
 ## Running Python {#linux_run .unnumbered}
@@ -82,8 +78,7 @@ To start up Python through Docker, follow these steps:
 docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:5.0
 ```
 
-
-\begin{center}\includegraphics[width=19.14in]{figs/chp2/docker_run} \end{center}
+<img src="figs/chp2/docker_run.png" width="689" style="display: block; margin: auto;" />
 
 <br>
 
@@ -101,19 +96,16 @@ Please do NOT close the terminal window until you are finished in this Python se
 
 <br>
 
-
-\begin{center}\includegraphics[width=15.79in]{figs/chp1/Figure10} \end{center}
+<img src="figs/chp1/Figure10.png" width="568" style="display: block; margin: auto;" />
 
 3. The page that loads will prompt you for a password or a token. This can be found in the text in the terminal following the last command you ran (step 9). A long series of numbers and letters will be preceded by `?token=`. Copy this long series of characters and paste into the password box in your browser.
 
-
-\begin{center}\includegraphics[width=24in]{figs/chp2/docker_token} \end{center}
+<img src="figs/chp2/docker_token.png" width="864" style="display: block; margin: auto;" />
 
 
 4. Now you are in Jupyter Lab you can open up a Python 3 notebook
 
-
-\begin{center}\includegraphics[width=19.21in]{figs/chp1/Figure11} \end{center}
+<img src="figs/chp1/Figure11.png" width="692" style="display: block; margin: auto;" />
 
 <br>
 
@@ -121,8 +113,7 @@ Please do NOT close the terminal window until you are finished in this Python se
 
 - This notebook is where you will run your code. Each shaded box is called a kernel. To test this out you can type `print('test')` into one of these kernels. To run the code use the shortcut `Ctrl + Enter`.
 
-
-\begin{center}\includegraphics[width=19.25in]{figs/chp1/Figure12} \end{center}
+<img src="figs/chp1/Figure12.png" width="693" style="display: block; margin: auto;" />
 
 <br>
 
@@ -136,27 +127,22 @@ Everything saved outside the `work` folder will be _destroyed_ as soon as you sh
 </div>
 
 - You can save your notebook using **File** > **Save notebook as**
-
-\begin{center}\includegraphics[width=14.93in]{figs/chp1/Figure13} \end{center}
+<img src="figs/chp1/Figure13.png" width="538" style="display: block; margin: auto;" />
 
 <br>
 
 - You can create new folders to organise your work
-
-\begin{center}\includegraphics[width=14.99in]{figs/chp1/Figure14} \end{center}
+<img src="figs/chp1/Figure14.png" width="540" style="display: block; margin: auto;" />
 
 <br>
 
 - And you can access other files on your machine through the 'work' folder in the File Browser. From here you can navigate to your Documents and designated folder for this module
 
+<img src="figs/chp1/Figure15a.png" width="538" style="display: block; margin: auto;" />
 
-\begin{center}\includegraphics[width=14.93in]{figs/chp1/Figure15a} \end{center}
+<img src="figs/chp1/Figure15b.png" width="538" style="display: block; margin: auto;" />
 
-
-\begin{center}\includegraphics[width=14.93in]{figs/chp1/Figure15b} \end{center}
-
-
-\begin{center}\includegraphics[width=14.93in]{figs/chp1/Figure15c} \end{center}
+<img src="figs/chp1/Figure15c.png" width="538" style="display: block; margin: auto;" />
 <br>
 
 ### Ending your session {.unlisted .unnumbered}
@@ -165,8 +151,7 @@ Once you have finished in your Jupyter session and have saved all your work, you
 
 Using `Ctrl + C` will prompt a `y/n` option. Either type `y` or `Ctrl + C` again to end the session. 
 
-
-\begin{center}\includegraphics[width=24in]{figs/chp2/docker_end} \end{center}
+<img src="figs/chp2/docker_end.png" width="864" style="display: block; margin: auto;" />
 
 <br>
 

@@ -8,13 +8,11 @@ Here are the steps you need to follow:
 
 1. Right click on the Windows logo in the left bottom corner of your screen and click on _system_.
 
-
-\begin{center}\includegraphics[width=29.85in]{figs/chp5/Picture7} \end{center}
+<img src="figs/chp5/Picture7.png" width="1074" style="display: block; margin: auto;" />
 
 2. You will find the version of your Windows under _Windows Specifications_ and _Edition_ (here it is Windows 10 Home as an example):
 
-
-\begin{center}\includegraphics[width=67.29in]{figs/chp5/Version_tut_1} \end{center}
+<img src="figs/chp5/Version_tut_1.png" width="2422" style="display: block; margin: auto;" />
 
 Knowing the version you are running, you can then follow on to install Python for your version:
 
@@ -36,14 +34,12 @@ To check which architecture you have, follow these steps:
 
 1. Right click on the Windows logo in the left bottom corner of the task menu and select **System**
 
-
-\begin{center}\includegraphics[width=37.67in]{figs/chp4/Picture7} \end{center}
+<img src="figs/chp4/Picture7.png" width="1356" style="display: block; margin: auto;" />
 
 This will bring you to your system information page
 
 2. The architecture of your computer can be found under the **System type** section (highlighted in red, for this example it is 64-bit):
 
-
-\begin{center}\includegraphics[width=29.85in]{figs/chp4/Picture8} \end{center}
+<img src="figs/chp4/Picture8.png" width="1074" style="display: block; margin: auto;" />
 
 Knowing which architecture your computer has allows you to download the right version of Miniconda, one of the [requirements](#otherwin_reqs) for successful installation.

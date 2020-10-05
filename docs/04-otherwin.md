@@ -36,13 +36,11 @@ To download these files, follow these steps with each:
     
 1. Right-click on the link to each file and select "Save link as"
     
-
-\begin{center}\includegraphics[width=15.85in]{figs/chp4/download_file} \end{center}
+<img src="figs/chp4/download_file.png" width="570" style="display: block; margin: auto;" />
     
 2. This will prompt a window as below. Select a destination to download it to (the Desktop, for example) and hit "Save"
     
-
-\begin{center}\includegraphics[width=19.71in]{figs/chp4/save_file} \end{center}
+<img src="figs/chp4/save_file.png" width="710" style="display: block; margin: auto;" />
     
 </div>
 
@@ -55,8 +53,7 @@ To download Miniconda, follow these steps:
     
 1. Head over to the [Download Page](https://docs.conda.io/en/latest/miniconda.html#windows-installers) and select Python 3.8:
     
-
-\begin{center}\includegraphics[width=29.86in]{figs/chp4/Picture10} \end{center}
+<img src="figs/chp4/Picture10.png" width="1075" style="display: block; margin: auto;" />
 
 2. We are using **Python 3.8**, so depending on which windows version you are using (32-bit or 64-bit), click on the relevant file in the Python 3.8 section (highlighted in red). 
 3. This will download the Miniconda installation file. Depending on your setup and browser, you will need to select where to place it (the Desktop folder would be a good option) or it will go straight into a default location (e.g. the Downloads folder)
@@ -73,39 +70,32 @@ The next step is to install the copy of Miniconda we just downloaded. To do that
 1. Head over to the folder where you downloaded it (the Desktop in our case)
 2. Double click the downloaded file will open an installation window:
 
-
-\begin{center}\includegraphics[width=7.22in]{figs/chp4/inst_1} \end{center}
+<img src="figs/chp4/inst_1.PNG" width="260" style="display: block; margin: auto;" />
 
 3. Click **_Next_** on the first step. 
 4. Click **_I Agree_** to the Terms and Conditions:
 
-
-\begin{center}\includegraphics[width=7.24in]{figs/chp4/inst_2} \end{center}
+<img src="figs/chp4/inst_2.PNG" width="260" style="display: block; margin: auto;" />
 5. In the next window, we will select "Just Me" so no administrator rights are required:
 
-
-\begin{center}\includegraphics[width=7.15in]{figs/chp4/inst_3} \end{center}
+<img src="figs/chp4/inst_3.PNG" width="258" style="display: block; margin: auto;" />
 
 6. The next window will ask you where to install Miniconda. Unless you know what you are doing, leave the path (highlighted in blue) as is and click next: 
 
-
-\begin{center}\includegraphics[width=7.17in]{figs/chp4/inst_4} \end{center}
+<img src="figs/chp4/inst_4.PNG" width="258" style="display: block; margin: auto;" />
 
 7. The next window can be used for an advanced setup. Unless you know what you are doing, leave the default settings as they are (ie. box ticked at _Register Miniconda3 as my default Python 3.8_).
 
-
-\begin{center}\includegraphics[width=7.18in]{figs/chp4/inst_5} \end{center}
+<img src="figs/chp4/inst_5.PNG" width="258" style="display: block; margin: auto;" />
 
 7. Click **_Install_** and the installation process will begin:
 
-
-\begin{center}\includegraphics[width=7.17in]{figs/chp4/inst_6} \end{center}
+<img src="figs/chp4/inst_6.PNG" width="258" style="display: block; margin: auto;" />
 
 8. Once the installation is complete, click **_Next_**.
 9. Untick all boxes in the window (unless you want further information on Miniconda, which will open in your browser) and click **_Finish_**:
 
-
-\begin{center}\includegraphics[width=7.15in]{figs/chp4/inst_7} \end{center}
+<img src="figs/chp4/inst_7.PNG" width="258" style="display: block; margin: auto;" />
 
 ### Install GDS Environment {#otherWin_gds .unlisted .unnumbered}
 
@@ -113,18 +103,15 @@ Once we have Miniconda ready to go, the next step is to install what we will cal
 
 1. Head to the Windows icon on the bottom left of your screen and type **_Anaconda_**:
 
-
-\begin{center}\includegraphics[width=29.86in]{figs/chp4/Picture20} \end{center}
+<img src="figs/chp4/Picture20.png" width="1075" style="display: block; margin: auto;" />
 
 2. Now click on **_Anaconda Prompt (miniconda3)_** (from now on we will refer to this as the **Anaconda Prompt**)
 
-
-\begin{center}\includegraphics[width=29.85in]{figs/chp4/Picture21} \end{center}
+<img src="figs/chp4/Picture21.png" width="1074" style="display: block; margin: auto;" />
 
 3. This will launch a window that looks, more or less, like this:
 
-
-\begin{center}\includegraphics[width=13.64in]{figs/chp4/Conda_1} \end{center}
+<img src="figs/chp4/Conda_1.PNG" width="491" style="display: block; margin: auto;" />
 
 4. Now we need to "navigate" to the folder where you placed the files downloaded above (`gds_py.yml` and `jl_setup.bat`). In this illustration, we are using the Desktop folder, so you can run the following command:
 
@@ -140,8 +127,7 @@ Note that you can move to a given folder by using the command `cd myFolder` to m
 conda-env create -f gds_py.yml
 ```
 
-
-\begin{center}\includegraphics[width=13.6in]{figs/chp4/Conda_4} \end{center}
+<img src="figs/chp4/Conda_4.PNG" width="490" style="display: block; margin: auto;" />
 
 <div class="alert alert-info" style="font-size:120%">
 <b>TIP</b>: <br>
@@ -153,8 +139,7 @@ This step requires that `gds_py.yml` exists in the folder where you have directe
 
 6. If everything has gone according to plan, your Anaconda Prompt should look a bit like this:
 
-
-\begin{center}\includegraphics[width=13.6in]{figs/chp4/Conda_7} \end{center}
+<img src="figs/chp4/Conda_7.PNG" width="490" style="display: block; margin: auto;" />
 
 This has created correctly the `gds` environment, congratulations! We are _almost_ there.
 
@@ -184,8 +169,7 @@ jl_setup.bat
 
 And hit enter. Your Anaconda Prompt should display a series of commands that looks, more or less, as follows:
  
-
-\begin{center}\includegraphics[width=13.61in]{figs/chp4/Conda_9} \end{center}
+<img src="figs/chp4/Conda_9.PNG" width="490" style="display: block; margin: auto;" />
 
 <div class="alert alert-info" style="font-size:120%">
 <b>TIP</b>: <br>
@@ -241,15 +225,13 @@ If your default browser is neither of the recommended, you can:
 1. Close the window that opens automatically
 2. Open Firefox/Chrome and paste the URL from the Anaconda Prompt:
 
-
-\begin{center}\includegraphics[width=13.58in]{figs/chp4/Conda_13} \end{center}
+<img src="figs/chp4/Conda_13.PNG" width="489" style="display: block; margin: auto;" />
 
 </div>
 
 You should now be looking at an interface that looks very similar to this:
 
-
-\begin{center}\includegraphics[width=24.18in]{figs/chp4/jupyter_lab} \end{center}
+<img src="figs/chp4/jupyter_lab.png" width="870" style="display: block; margin: auto;" />
 
 If that is the case, CONGRATULATIONS!!! You are ready to go and start hacking away!!!
 
