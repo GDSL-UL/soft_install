@@ -1,6 +1,6 @@
 # Windows 10 Home/pre-10 {#otherWin .unnumbered}
 
-This guide covers the installation of Python on machines running Windows 10 Home Edition of versions of Windows prior to Windows 10 (e.g. Windows 7). With this approach, you will install Python "natively", that is running directly on your operating system.
+This guide covers the installation of Python on machines running Windows 10 Home Edition or versions of Windows prior to Windows 10 (e.g. Windows 7). With this approach, you will install Python "natively", that is running directly on your operating system.
 
 <div class="alert alert-success" style="font-size:120%">
 <b>TIP</b>: <br>
@@ -19,11 +19,11 @@ This process involves a few steps:
 1. [Extra addon's](#otherWin_addons): put the final touches on the install
 1. [Success check](#otherWin_check): certify everything went smoothly
 
-Make sure you complete each successfully before moving on to the next.
+Make sure you complete each of them successfully before moving on to the next one.
 
 ### Requirements {#otherwin_reqs .unlisted .unnumbered}
 
-To complete successfully this installation route, you will need the following:
+To complete this installation route successfully, you will need the following:
 
 - A good internet connection
 - The `gds_py.yml` file that you can download on [this link](https://github.com/darribas/gds_env/raw/master/gds_py/gds_py.yml). Right click and "Save Link As" to download it to your computer, as illustrated in the blue box below.
@@ -187,17 +187,17 @@ When this completes, you are all set to go, congratulations!!!
 To make sure that your installation was successful and all packages have been installed we need to run one more thing. Here're the steps to follow:
 
 1. Download the [**check_py_stack.ipynb**](https://raw.githubusercontent.com/darribas/gds_env/master/gds_py/check_py_stack.ipynb) file by right clicking on it and selecting **_Save link as_**. Make sure to use the same folder we have been using so far.
-2. From the same Anaconda Prompt as above, with the environment activated (you'll know that the case if `(gds)` is at the top of the line in the command prompt), run:
+2. From the same Anaconda Prompt as above, with the environment activated (you'll know that is the case if `(gds)` is at the top of the line in the command prompt), run:
 
 ```shell
 jupyter nbconvert --to html --execute check_py_stack.ipynb
 ```
 
-This will take a little bit and, if it succeeds, it will produce a file called `check_py_stack.html` that you can open on your browser to inspect. If there are no errors and every cell has been run correctly, your resulting file should look like [this one](check_py_stack.html). If the two look the same, you are all set!!!
+This will take a little bit and, if it succeeds, it will produce a file called `check_py_stack.html` that you can open in your browser to inspect. If there are no errors and every cell has been run correctly, your resulting file should look like [this one](check_py_stack.html). If the two look the same, you are all set!!!
 
 ## Running Python {#otherWin_run .unnumbered}
 
-Now that you have successfully installed Python on your computer, you are ready to go! Now every time you want to launch the environment, called Jupyter Lab, you will need to follow these steps:
+Now that you have successfully installed Python on your computer, you are ready to go! Now every time you want to launch the app, called Jupyter Lab, you will need to follow these steps:
 
 1. Start by opening an Anaconda Prompt (remember: "Start Menu" --> "Anaconda Prompt (miniconda3)").
 2. Navigate to the folder that you want to work in using the `cd` command (for example, your home directory: `C:\Users\username`). 
