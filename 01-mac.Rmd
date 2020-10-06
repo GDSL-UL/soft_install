@@ -1,6 +1,6 @@
 # MacOS Installation {#macos .unnumbered}
 
-**NOTE** This guide shows you how to install on Linux via the `gds_env` [@gds_env]
+**NOTE** This guide shows you how to install on MacOS via the `gds_env` [@gds_env]
 
 ## Installation {.unnumbered}
 
