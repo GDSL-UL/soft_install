@@ -158,21 +158,7 @@ Everything saved outside the `work` folder will be _destroyed_ as soon as you sh
 </div>
 
 
-- You can save your notebook using **File** > **Save notebook as**
-```{r fig13, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure13.png")
-```
-
-<br>
-
-- You can create new folders to organise your work
-```{r fig14, fig.align = 'center', echo = FALSE}
-knitr::include_graphics("figs/chp1/Figure14.png")
-```
-
-<br>
-
-- And you can access other files on your machine through the 'Work' folder in the File Browser. From here you can navigate to your Documents and designated folder for this module
+- You can access other files on your machine through the `work` folder in the File Browser. From here you can navigate to your Documents and designated folder for this module
 
 ```{r fig15a, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure15a.png")
@@ -185,6 +171,20 @@ knitr::include_graphics("figs/chp1/Figure15b.png")
 ```{r fig15c, fig.align = 'center', echo = FALSE}
 knitr::include_graphics("figs/chp1/Figure15c.png")
 ```
+<br>
+
+- You can save your notebook here using **File** > **Save notebook as**
+```{r fig13, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp1/Figure13.png")
+```
+
+<br>
+
+- And you can create new folders to organise your work
+```{r fig14, fig.align = 'center', echo = FALSE}
+knitr::include_graphics("figs/chp1/Figure14.png")
+```
+
 <br>
 
 ### Ending your session {.unlisted .unnumbered}
