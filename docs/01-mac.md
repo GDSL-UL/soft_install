@@ -1,6 +1,6 @@
 # MacOS Installation {#macos .unnumbered}
 
-**NOTE** This guide shows you how to install on Linux via the `gds_env` [@gds_env]
+**NOTE** This guide shows you how to install on MacOS via the `gds_env` [@gds_env]
 
 ## Installation {.unnumbered}
 
@@ -76,7 +76,7 @@ You will know the process has completed successfully when each line says 'Pull c
 
 If everything has gone according to plan, you should see `darribas/gds:5.0` show up on your terminal when you type `docker image ls` (note in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gds:5.0` listed):
 
-<img src="figs/chp2/docker_image_ls.png" width="689" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure8.png" width="284" style="display: block; margin: auto;" />
 <br>
 
 ## Running Python {.unnumbered}
@@ -102,7 +102,7 @@ Please do NOT close the terminal window until you are finished in this Python se
 
 2. To access this session go to your chosen web browser (e.g. Safari/Chrome) and type: `localhost:8888` into the search bar
 
-<img src="figs/chp1/Figure10.png" width="568" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure10_new.png" width="551" style="display: block; margin: auto;" />
 
 3. The page that loads will prompt you for a password or a token. This can be found in the text in the terminal following the last command you ran (step 9). A long series of numbers and letters will be preceded by `?token=`. Copy this long series of characters and paste into the password box in your browser.
 
@@ -134,23 +134,23 @@ Everything saved outside the `work` folder will be _destroyed_ as soon as you sh
 </div>
 
 
-- You can save your notebook using **File** > **Save notebook as**
-<img src="figs/chp1/Figure13.png" width="538" style="display: block; margin: auto;" />
+- You can access other files on your machine through the `work` folder in the File Browser. From here you can navigate to your Documents and designated folder for this module
 
-<br>
-
-- You can create new folders to organise your work
-<img src="figs/chp1/Figure14.png" width="540" style="display: block; margin: auto;" />
-
-<br>
-
-- And you can access other files on your machine through the 'Work' folder in the File Browser. From here you can navigate to your Documents and designated folder for this module
-
-<img src="figs/chp1/Figure15a.png" width="538" style="display: block; margin: auto;" />
+<img src="figs/chp1/Figure15a_new.png" width="551" style="display: block; margin: auto;" />
 
 <img src="figs/chp1/Figure15b.png" width="538" style="display: block; margin: auto;" />
 
 <img src="figs/chp1/Figure15c.png" width="538" style="display: block; margin: auto;" />
+<br>
+
+- You can save your notebook here using **File** > **Save notebook as**
+<img src="figs/chp1/Figure13_new.png" width="551" style="display: block; margin: auto;" />
+
+<br>
+
+- And you can create new folders to organise your work
+<img src="figs/chp1/Figure14_new.png" width="551" style="display: block; margin: auto;" />
+
 <br>
 
 ### Ending your session {.unlisted .unnumbered}
