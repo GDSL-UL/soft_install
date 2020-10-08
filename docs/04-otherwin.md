@@ -210,7 +210,7 @@ conda activate gds
 4. Launch Jupyter lab by running the following command:
 
 ```shell
-jupyer lab
+jupyter lab
 ```
 
 This will launch Jupyter Lab in your default browser.
