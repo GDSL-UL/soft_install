@@ -72,7 +72,7 @@ Make sure you are connected to the internet and it is a stable connection. This 
 
 ### Check success {.unlisted .unnumbered}
 
-You will know the process has completed successfully when each line says 'Pull complete' and the new line gives your machine name followed by a `$` sign.
+You will know the process has completed successfully when each line says 'Pull complete' and the new line shows your machine name.
 
 If everything has gone according to plan, you should see `darribas/gds:5.0` show up on your terminal when you type `docker image ls` (note in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gds:5.0` listed):
 
@@ -134,13 +134,17 @@ Everything saved outside the `work` folder will be _destroyed_ as soon as you sh
 </div>
 
 
-- You can access other files on your machine through the `work` folder in the File Browser. From here you can navigate to your Documents and designated folder for this module
+- You can access other files on your machine through the `work` folder in the File Browser. From here you can navigate to your Documents and designated folder for this module. 
 
 <img src="figs/chp1/Figure15a_new.png" width="551" style="display: block; margin: auto;" />
 
 <img src="figs/chp1/Figure15b.png" width="538" style="display: block; margin: auto;" />
 
 <img src="figs/chp1/Figure15c.png" width="538" style="display: block; margin: auto;" />
+
+
+Here I am navigating to the GDS folder that I have created for this module in my Documents. You can replace this with the pathway to the folder you create for this module.
+
 <br>
 
 - You can save your notebook here using **File** > **Save notebook as**
