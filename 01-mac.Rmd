@@ -84,7 +84,7 @@ Make sure you are connected to the internet and it is a stable connection. This 
 
 ### Check success {.unlisted .unnumbered}
 
-You will know the process has completed successfully when each line says 'Pull complete' and the new line gives your machine name followed by a `$` sign.
+You will know the process has completed successfully when each line says 'Pull complete' and the new line shows your machine name.
 
 If everything has gone according to plan, you should see `darribas/gds:5.0` show up on your terminal when you type `docker image ls` (note in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gds:5.0` listed):
 
