@@ -26,7 +26,7 @@ Make sure you complete each of them successfully before moving on to the next on
 To complete this installation route successfully, you will need the following:
 
 - A good internet connection
-- The `gds_py.yml` file that you can download on [this link](https://github.com/darribas/gds_env/raw/master/gds_py/gds_py.yml). Right click and "Save Link As" to download it to your computer, as illustrated in the blue box below.
+- The `gds_py.yml` file that you can download on [this link](https://github.com/darribas/gds_env/raw/7a6a2b3b47d6faa96e854e35dfcf8672e34b6db4/gds_py/gds_py.yml). Right click and "Save Link As" to download it to your computer, as illustrated in the blue box below.
 - The `jl_setup.bat` file that you can download on [this link](jl_setup.bat). Right click and "Save Link As" to download it to your computer, as illustrated in the blue box below.
 
 <div class="alert alert-info" style="font-size:120%">
@@ -35,13 +35,13 @@ To complete this installation route successfully, you will need the following:
 To download these files, follow these steps with each: 
     
 1. Right-click on the link to each file and select "Save link as"
-    
+
 <img src="figs/chp4/download_file.png" width="570" style="display: block; margin: auto;" />
-    
+
 2. This will prompt a window as below. Select a destination to download it to (the Desktop, for example) and hit "Save"
-    
+
 <img src="figs/chp4/save_file.png" width="710" style="display: block; margin: auto;" />
-    
+
 </div>
 
 - A copy of Miniconda for Windows and Python 3.8. Make sure you check [which architecture of Windows you are running](#windows-arch) before proceeding.
@@ -52,7 +52,7 @@ To download these files, follow these steps with each:
 To download Miniconda, follow these steps:
     
 1. Head over to the [Download Page](https://docs.conda.io/en/latest/miniconda.html#windows-installers) and select Python 3.8:
-    
+
 <img src="figs/chp4/Picture10.png" width="1075" style="display: block; margin: auto;" />
 
 2. We are using **Python 3.8**, so depending on which windows version you are using (32-bit or 64-bit), click on the relevant file in the Python 3.8 section (highlighted in red). 
@@ -168,7 +168,7 @@ jl_setup.bat
 ```
 
 And hit enter. Your Anaconda Prompt should display a series of commands that looks, more or less, as follows:
- 
+
 <img src="figs/chp4/Conda_9.PNG" width="490" style="display: block; margin: auto;" />
 
 <div class="alert alert-info" style="font-size:120%">
