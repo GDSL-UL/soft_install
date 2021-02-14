@@ -26,7 +26,7 @@ Make sure you complete each of them successfully before moving on to the next on
 To complete this installation route successfully, you will need the following:
 
 - A good internet connection
-- The `gds_py.yml` file that you can download on [this link](https://github.com/darribas/gds_env/raw/master/gds_py/gds_py.yml). Right click and "Save Link As" to download it to your computer, as illustrated in the blue box below.
+- The `gds_py.yml` file that you can download on [this link](https://github.com/darribas/gds_env/raw/7a6a2b3b47d6faa96e854e35dfcf8672e34b6db4/gds_py/gds_py.yml). Right click and "Save Link As" to download it to your computer, as illustrated in the blue box below.
 - The `jl_setup.bat` file that you can download on [this link](jl_setup.bat). Right click and "Save Link As" to download it to your computer, as illustrated in the blue box below.
 
 <div class="alert alert-info" style="font-size:120%">
@@ -35,17 +35,17 @@ To complete this installation route successfully, you will need the following:
 To download these files, follow these steps with each: 
     
 1. Right-click on the link to each file and select "Save link as"
-    
-```{r fig4a, fig.align = 'center', echo = FALSE}
+
+```{r fig4a, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/download_file.png")
 ```
-    
+
 2. This will prompt a window as below. Select a destination to download it to (the Desktop, for example) and hit "Save"
-    
-```{r fig4b, fig.align = 'center', echo = FALSE}
+
+```{r fig4b, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/save_file.png")
-``` 
-    
+```
+
 </div>
 
 - A copy of Miniconda for Windows and Python 3.8. Make sure you check [which architecture of Windows you are running](#windows-arch) before proceeding.
@@ -56,8 +56,8 @@ knitr::include_graphics("figs/chp4/save_file.png")
 To download Miniconda, follow these steps:
     
 1. Head over to the [Download Page](https://docs.conda.io/en/latest/miniconda.html#windows-installers) and select Python 3.8:
-    
-```{r mc1, fig.align = 'center', echo = FALSE}
+
+```{r mc1, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/Picture10.png")
 ```
 
@@ -76,44 +76,44 @@ The next step is to install the copy of Miniconda we just downloaded. To do that
 1. Head over to the folder where you downloaded it (the Desktop in our case)
 2. Double click the downloaded file will open an installation window:
 
-```{r inst1, fig.align = 'center', echo = FALSE}
+```{r inst1, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/inst_1.PNG")
 ```
 
 3. Click **_Next_** on the first step. 
 4. Click **_I Agree_** to the Terms and Conditions:
 
-```{r Inst2, fig.align = 'center', echo = FALSE}
+```{r Inst2, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/inst_2.PNG")
 ```
 5. In the next window, we will select "Just Me" so no administrator rights are required:
 
-```{r Inst_3, fig.align = 'center', echo = FALSE}
+```{r Inst_3, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/inst_3.PNG")
 ```
 
 6. The next window will ask you where to install Miniconda. Unless you know what you are doing, leave the path (highlighted in blue) as is and click next: 
 
-```{r Inst4, fig.align = 'center', echo = FALSE}
+```{r Inst4, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/inst_4.PNG")
 ```
 
 7. The next window can be used for an advanced setup. Unless you know what you are doing, leave the default settings as they are (ie. box ticked at _Register Miniconda3 as my default Python 3.8_).
 
-```{r Inst_5, fig.align = 'center', echo = FALSE}
+```{r Inst_5, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/inst_5.PNG")
 ```
 
 7. Click **_Install_** and the installation process will begin:
 
-```{r Inst6, fig.align = 'center', echo = FALSE}
+```{r Inst6, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/inst_6.PNG")
 ```
 
 8. Once the installation is complete, click **_Next_**.
 9. Untick all boxes in the window (unless you want further information on Miniconda, which will open in your browser) and click **_Finish_**:
 
-```{r Inst7, fig.align = 'center', echo = FALSE}
+```{r Inst7, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/inst_7.PNG")
 ```
 
@@ -123,19 +123,19 @@ Once we have Miniconda ready to go, the next step is to install what we will cal
 
 1. Head to the Windows icon on the bottom left of your screen and type **_Anaconda_**:
 
-```{r fig20, fig.align = 'center', echo = FALSE}
+```{r fig20, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/Picture20.png")
 ```
 
 2. Now click on **_Anaconda Prompt (miniconda3)_** (from now on we will refer to this as the **Anaconda Prompt**)
 
-```{r fig21, fig.align = 'center', echo = FALSE}
+```{r fig21, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/Picture21.png")
 ```
 
 3. This will launch a window that looks, more or less, like this:
 
-```{r Conda1, fig.align = 'center', echo = FALSE}
+```{r Conda1, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/Conda_1.PNG")
 ```
 
@@ -153,7 +153,7 @@ Note that you can move to a given folder by using the command `cd myFolder` to m
 conda-env create -f gds_py.yml
 ```
 
-```{r Conda4, fig.align = 'center', echo = FALSE}
+```{r Conda4, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/Conda_4.PNG")
 ```
 
@@ -167,7 +167,7 @@ This step requires that `gds_py.yml` exists in the folder where you have directe
 
 6. If everything has gone according to plan, your Anaconda Prompt should look a bit like this:
 
-```{r Conda7, fig.align = 'center', echo = FALSE}
+```{r Conda7, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/Conda_7.PNG")
 ```
 
@@ -198,8 +198,8 @@ jl_setup.bat
 ```
 
 And hit enter. Your Anaconda Prompt should display a series of commands that looks, more or less, as follows:
- 
-```{r Conda9, fig.align = 'center', echo = FALSE}
+
+```{r Conda9, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/Conda_9.PNG")
 ```
 
@@ -257,7 +257,7 @@ If your default browser is neither of the recommended, you can:
 1. Close the window that opens automatically
 2. Open Firefox/Chrome and paste the URL from the Anaconda Prompt:
 
-```{r Pciture24, fig.align = 'center', echo = FALSE}
+```{r Pciture24, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/Conda_13.PNG")
 ```
 
@@ -265,7 +265,7 @@ knitr::include_graphics("figs/chp4/Conda_13.PNG")
 
 You should now be looking at an interface that looks very similar to this:
 
-```{r Lab, fig.align = 'center', echo = FALSE}
+```{r Lab, echo=FALSE, fig.align="center"}
 knitr::include_graphics("figs/chp4/jupyter_lab.png")
 ```
 
