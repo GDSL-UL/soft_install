@@ -26,7 +26,6 @@ Make sure you complete each of them successfully before moving on to the next on
 To complete this installation route successfully, you will need the following:
 
 - A good internet connection
-- The `gds_py.yml` file that you can download on [this link](https://github.com/darribas/gds_env/raw/7a6a2b3b47d6faa96e854e35dfcf8672e34b6db4/gds_py/gds_py.yml). Right click and "Save Link As" to download it to your computer, as illustrated in the blue box below.
 - The `jl_setup.bat` file that you can download on [this link](jl_setup.bat). Right click and "Save Link As" to download it to your computer, as illustrated in the blue box below.
 
 <div class="alert alert-info" style="font-size:120%">
@@ -36,11 +35,7 @@ To download these files, follow these steps with each:
     
 1. Right-click on the link to each file and select "Save link as"
 
-<img src="figs/chp4/download_file.png" width="570" style="display: block; margin: auto;" />
-
-2. This will prompt a window as below. Select a destination to download it to (the Desktop, for example) and hit "Save"
-
-<img src="figs/chp4/save_file.png" width="710" style="display: block; margin: auto;" />
+<img src="figs/chp4/download_file.png" width="588" style="display: block; margin: auto;" />
 
 </div>
 
@@ -60,7 +55,7 @@ To download Miniconda, follow these steps:
     
 </div>
 
-For the sake of this guide, we will assume you download the two files (`gds_py.yml` and `jl_setup.bat`) and the Miniconda installer on the Desktop folder (`C:\Users\username\Desktop`). You do not need to choose this folder but, if you use a different one, please adjust all instructions below accordingly.
+For the sake of this guide, we will assume you download the `jl_setup.bat` file and the Miniconda installer on the Desktop folder (`C:\Users\username\Desktop`). You do not need to choose this folder but, if you use a different one, please adjust all instructions below accordingly.
 
 
 ### Minicoda Install {#miniconda_install .unlisted .unnumbered}
@@ -113,7 +108,7 @@ Once we have Miniconda ready to go, the next step is to install what we will cal
 
 <img src="figs/chp4/Conda_1.PNG" width="491" style="display: block; margin: auto;" />
 
-4. Now we need to "navigate" to the folder where you placed the files downloaded above (`gds_py.yml` and `jl_setup.bat`). In this illustration, we are using the Desktop folder, so you can run the following command:
+4. Now we need to "navigate" to the folder where you placed the `jl_setup.bat`file. In this illustration, we are using the Desktop folder, so you can run the following command:
 
 ```shell
 cd Desktop
@@ -124,15 +119,13 @@ Note that you can move to a given folder by using the command `cd myFolder` to m
 5. Once you have navigated to the location of your files (e.g. _Desktop_), run the following command in the Anaconda Prompt, and press enter to execute it: 
 
 ```shell
-conda-env create -f gds_py.yml
+conda-env create -f https://github.com/darribas/gds_env/raw/v6.0post1/gds_py/gds_py.yml
 ```
-
-<img src="figs/chp4/Conda_4.PNG" width="490" style="display: block; margin: auto;" />
 
 <div class="alert alert-info" style="font-size:120%">
 <b>TIP</b>: <br>
 
-This step requires that `gds_py.yml` exists in the folder where you have directed the Anaconda Prompt (e.g. `C:\Users\username\Downloads`) and will take a while, depending on the speed of your connection but no less than 15-20 minutes. Grab a *cuppa* and be patient!
+This step will take a while, depending on the speed of your connection but no less than 15-20 minutes. Grab a *cuppa* and be patient!
 </div>
 
 

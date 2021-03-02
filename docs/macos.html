@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>MacOS Installation | Software Installation Guide</title>
   <meta name="description" content="Installation Guide for R and Python" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="MacOS Installation | Software Installation Guide" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Francisco Rowe, Dani Arribas-Bel" />
 
 
-<meta name="date" content="2021-02-14" />
+<meta name="date" content="2021-03-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="linux.html"/>
-<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -116,7 +116,7 @@
             <section class="normal" id="section-">
 <div id="macos" class="section level1 unnumbered">
 <h1>MacOS Installation</h1>
-<p><strong>NOTE</strong> This guide shows you how to install on MacOS via the <code>gds_env</code> <span class="citation">(Arribas-Bel <a href="#ref-gds_env" role="doc-biblioref">2019</a>)</span></p>
+<p><strong>NOTE</strong> This guide shows you how to install on MacOS via the <code>gds_env</code> <span class="citation">(<a href="references.html#ref-gds_env" role="doc-biblioref">Arribas-Bel 2019</a>)</span></p>
 <div id="installation" class="section level2 unnumbered">
 <h2>Installation</h2>
 <div id="requirements" class="section level3 unlisted unnumbered">
@@ -165,7 +165,9 @@ You may get further windows asking for access to the program. To these you can c
 <li>Access your terminal: <strong>Launchpad</strong> &gt; <strong>Other</strong> &gt; <strong>Terminal</strong></li>
 <li>In a fresh line in the terminal type the following to install the GDS environment container:</li>
 </ol>
-<pre class="shell"><code>docker pull darribas/gds:5.0</code></pre>
+<p><strong>NOTE</strong>: please ignore the version showing in the screenshot, follow that in
+the command below</p>
+<pre class="shell"><code>docker pull darribas/gds:6.0</code></pre>
 <p><img src="figs/chp1/Figure5.png" width="286" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <ol start="3" style="list-style-type: decimal">
@@ -181,7 +183,9 @@ Dont be alarmed if it seems to take a very long time.</li>
 <div id="check-success" class="section level3 unlisted unnumbered">
 <h3>Check success</h3>
 <p>You will know the process has completed successfully when each line says ‘Pull complete’ and the new line shows your machine name.</p>
-<p>If everything has gone according to plan, you should see <code>darribas/gds:5.0</code> show up on your terminal when you type <code>docker image ls</code> (note in the image below there are other containers that are not required, do not worry if you don’t have those or slightly different values on the ID and the “CREATED” columns, the important bit is having <code>darribas/gds:5.0</code> listed):</p>
+<p>If everything has gone according to plan, you should see <code>darribas/gds:6.0</code> show up on your terminal when you type <code>docker image ls</code> (note in the image below there are other containers that are not required, do not worry if you don’t have those or slightly different values on the ID and the “CREATED” columns, the important bit is having <code>darribas/gds:6.0</code> listed):</p>
+<p><strong>NOTE</strong>: please ignore the version showing in the screenshot, follow that in
+the command below</p>
 <p><img src="figs/chp1/Figure8.png" width="284" style="display: block; margin: auto;" />
 <br></p>
 </div>
@@ -192,8 +196,10 @@ Dont be alarmed if it seems to take a very long time.</li>
 <div id="running-the-container" class="section level3 unlisted unnumbered">
 <h3>Running the container</h3>
 <ol style="list-style-type: decimal">
-<li>In the new terminal line type the following command to run the container: <code>docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:5.0</code></li>
+<li>In the new terminal line type the following command to run the container: <code>docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:6.0</code></li>
 </ol>
+<p><strong>NOTE</strong>: please ignore the version showing in the screenshot, follow that in
+the command below</p>
 <p><img src="figs/chp1/Figure7.png" width="286" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <p>You have now started a Python session.</p>
@@ -255,15 +261,9 @@ Dont be alarmed if it seems to take a very long time.</li>
 <p><br></p>
 <p>You can now safely shut the terminal window.</p>
 <p><br></p>
-<p>Next time you go to run a Jupyter Notebook you will not need to repeat the whole process as you have already installed Docker and the GDS environment. Instead you can start from <a href="macos.html#running-the-container">Running the container</a> and carry on from there.</p>
+<p>Next time you go to run a Jupyter Notebook you will not need to repeat the whole process as you have already installed Docker and the GDS environment. Instead you can start from <a href="win10pro.html#running-the-container-2">Running the container</a> and carry on from there.</p>
 
 </div>
-</div>
-</div>
-<h3>References</h3>
-<div id="refs" class="references">
-<div id="ref-gds_env">
-<p>Arribas-Bel, Dani. 2019. <em><code>gds_env</code>: A Containerised Platform for Geographic Data Science</em> (version 5.0). <a href="https://darribas.org/gds_env">https://darribas.org/gds_env</a>.</p>
 </div>
 </div>
             </section>

@@ -41,8 +41,11 @@ Once you have Docker installed and running on your machine, installing everythin
 1. Open your terminal app of choice (for example, Gnome Terminal)
 2. Run the following command:
 
+**NOTE**: please ignore the version showing in the screenshot, follow that in
+the command below
+
 ```shell
-docker pull darribas/gds:5.0
+docker pull darribas/gds:6.0
 ```
 
 <img src="figs/chp2/terminal_pull.png" width="689" style="display: block; margin: auto;" />
@@ -59,7 +62,10 @@ Make sure you are connected to the internet and it is a stable connection. This 
 
 ### Check success {.unlisted .unnumbered}
 
-If everything has gone according to plan, you should see `darribas/gds:5.0` show up on your terminal when you type `docker image ls` (note in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gds:5.0` listed):
+If everything has gone according to plan, you should see `darribas/gds:6.0` show up on your terminal when you type `docker image ls` (note in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gds:6.0` listed):
+
+**NOTE**: please ignore the version showing in the screenshot, follow that in
+the command below
 
 <img src="figs/chp2/docker_image_ls.png" width="689" style="display: block; margin: auto;" />
 <br>
@@ -74,8 +80,11 @@ To start up Python through Docker, follow these steps:
 
 1. In a new terminal line, type the following command to run the container and hit enter: 
 
+**NOTE**: please ignore the version showing in the screenshot, follow that in
+the command below
+
 ```shell
-docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:5.0
+docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:6.0
 ```
 
 <img src="figs/chp2/docker_run.png" width="689" style="display: block; margin: auto;" />

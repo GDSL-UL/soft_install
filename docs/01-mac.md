@@ -51,8 +51,11 @@ Now we have Docker installed we can use it to access Python and all the associat
 1. Access your terminal: **Launchpad** > **Other** > **Terminal**
 2. In a fresh line in the terminal type the following to install the GDS environment container: 
 
+**NOTE**: please ignore the version showing in the screenshot, follow that in
+the command below
+
 ```shell
-docker pull darribas/gds:5.0
+docker pull darribas/gds:6.0
 ```
 
 <img src="figs/chp1/Figure5.png" width="286" style="display: block; margin: auto;" />
@@ -74,7 +77,10 @@ Make sure you are connected to the internet and it is a stable connection. This 
 
 You will know the process has completed successfully when each line says 'Pull complete' and the new line shows your machine name.
 
-If everything has gone according to plan, you should see `darribas/gds:5.0` show up on your terminal when you type `docker image ls` (note in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gds:5.0` listed):
+If everything has gone according to plan, you should see `darribas/gds:6.0` show up on your terminal when you type `docker image ls` (note in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gds:6.0` listed):
+
+**NOTE**: please ignore the version showing in the screenshot, follow that in
+the command below
 
 <img src="figs/chp1/Figure8.png" width="284" style="display: block; margin: auto;" />
 <br>
@@ -85,7 +91,10 @@ The following sections cover how to spin up a session you have just installed, u
 
 ### Running the container {.unlisted .unnumbered}
 
-1. In the new terminal line type the following command to run the container: `docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:5.0`
+1. In the new terminal line type the following command to run the container: `docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:6.0`
+
+**NOTE**: please ignore the version showing in the screenshot, follow that in
+the command below
 
 <img src="figs/chp1/Figure7.png" width="286" style="display: block; margin: auto;" />
 

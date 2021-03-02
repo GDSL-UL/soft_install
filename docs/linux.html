@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Linux Installation | Software Installation Guide</title>
   <meta name="description" content="Installation Guide for R and Python" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Linux Installation | Software Installation Guide" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Francisco Rowe, Dani Arribas-Bel" />
 
 
-<meta name="date" content="2021-02-14" />
+<meta name="date" content="2021-03-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="macos.html"/>
 <link rel="next" href="win10pro.html"/>
-<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -116,10 +116,10 @@
             <section class="normal" id="section-">
 <div id="linux" class="section level1 unnumbered">
 <h1>Linux Installation</h1>
-<p><strong>NOTE</strong> This guide shows you how to install on Linux via the <code>gds_env</code> <span class="citation">(Arribas-Bel <a href="#ref-gds_env" role="doc-biblioref">2019</a>)</span></p>
+<p><strong>NOTE</strong> This guide shows you how to install on Linux via the <code>gds_env</code> <span class="citation">(<a href="references.html#ref-gds_env" role="doc-biblioref">Arribas-Bel 2019</a>)</span></p>
 <div id="linux_install" class="section level2 unnumbered">
 <h2>Installation</h2>
-<div id="requirements" class="section level3 unlisted unnumbered">
+<div id="requirements-1" class="section level3 unlisted unnumbered">
 <h3>Requirements</h3>
 <p>To be able to complete this guide, your machine will need to meet the following requirements:</p>
 <ol style="list-style-type: decimal">
@@ -127,9 +127,9 @@
 <li>~10GB of space on your hard drive</li>
 <li>A Linux distribution supported by Docker. You can check available distributions for ready installation on <a href="https://hub.docker.com/search?q=&amp;type=edition&amp;offering=community&amp;operating_system=linux">this page</a>.</li>
 </ol>
-<p><strong>NOTE</strong> If you are running a different distribution (e.g. Arch Linux), there is a good chance Docker <em>will</em> work, but you will have to source your own instructions for installation. Once you have Docker up and running on your machine, you can move to <a href="linux.html#installing-the-gds-container">Installing the GDS container</a>.</p>
+<p><strong>NOTE</strong> If you are running a different distribution (e.g. Arch Linux), there is a good chance Docker <em>will</em> work, but you will have to source your own instructions for installation. Once you have Docker up and running on your machine, you can move to <a href="win10pro.html#winpro_docker_gds">Installing the GDS container</a>.</p>
 </div>
-<div id="docker-install-steps" class="section level3 unlisted unnumbered">
+<div id="docker-install-steps-1" class="section level3 unlisted unnumbered">
 <h3>Docker install steps</h3>
 <ol style="list-style-type: decimal">
 <li>Select the page for your distribution from the <a href="https://hub.docker.com/search?q=&amp;type=edition&amp;offering=community&amp;operating_system=linux">Docker Hub list of supported distributions</a></li>
@@ -157,18 +157,22 @@
 <li>Open your terminal app of choice (for example, Gnome Terminal)</li>
 <li>Run the following command:</li>
 </ol>
-<pre class="shell"><code>docker pull darribas/gds:5.0</code></pre>
+<p><strong>NOTE</strong>: please ignore the version showing in the screenshot, follow that in
+the command below</p>
+<pre class="shell"><code>docker pull darribas/gds:6.0</code></pre>
 <p><img src="figs/chp2/terminal_pull.png" width="689" style="display: block; margin: auto;" />
 <br></p>
-<p>You will know this has completed when each line says ‘Pull complete’.</p>
+<p>You will know this has completed when each line says ‘Pull complete.’</p>
 <div class="alert alert-info" style="font-size:120%">
 <p><b>IMPORTANT</b>: <br></p>
 <p>Make sure you are connected to the internet and it is a stable connection. This step involves the download of large amounts of data (ca. 10GB) so it might take a while. However, it only needs to be run once.</p>
 </div>
 </div>
-<div id="check-success" class="section level3 unlisted unnumbered">
+<div id="check-success-1" class="section level3 unlisted unnumbered">
 <h3>Check success</h3>
-<p>If everything has gone according to plan, you should see <code>darribas/gds:5.0</code> show up on your terminal when you type <code>docker image ls</code> (note in the image below there are other containers that are not required, do not worry if you don’t have those or slightly different values on the ID and the “CREATED” columns, the important bit is having <code>darribas/gds:5.0</code> listed):</p>
+<p>If everything has gone according to plan, you should see <code>darribas/gds:6.0</code> show up on your terminal when you type <code>docker image ls</code> (note in the image below there are other containers that are not required, do not worry if you don’t have those or slightly different values on the ID and the “CREATED” columns, the important bit is having <code>darribas/gds:6.0</code> listed):</p>
+<p><strong>NOTE</strong>: please ignore the version showing in the screenshot, follow that in
+the command below</p>
 <p><img src="figs/chp2/docker_image_ls.png" width="689" style="display: block; margin: auto;" />
 <br></p>
 </div>
@@ -176,13 +180,15 @@
 <div id="linux_run" class="section level2 unnumbered">
 <h2>Running Python</h2>
 <p>The following sections cover how to spin up the container you have just installed, use it, and shut it down when you are done.</p>
-<div id="running-the-container" class="section level3 unlisted unnumbered">
+<div id="running-the-container-1" class="section level3 unlisted unnumbered">
 <h3>Running the container</h3>
 <p>To start up Python through Docker, follow these steps:</p>
 <ol style="list-style-type: decimal">
 <li>In a new terminal line, type the following command to run the container and hit enter:</li>
 </ol>
-<pre class="shell"><code>docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:5.0</code></pre>
+<p><strong>NOTE</strong>: please ignore the version showing in the screenshot, follow that in
+the command below</p>
+<pre class="shell"><code>docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:6.0</code></pre>
 <p><img src="figs/chp2/docker_run.png" width="689" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <p>You have now started a Python session.</p>
@@ -205,7 +211,7 @@
 <p><img src="figs/chp1/Figure11.png" width="692" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
-<div id="using-jupyter-notebook" class="section level3 unlisted unnumbered">
+<div id="using-jupyter-notebook-1" class="section level3 unlisted unnumbered">
 <h3>Using Jupyter Notebook</h3>
 <ul>
 <li>This notebook is where you will run your code. Each shaded box is called a kernel. To test this out you can type <code>print('test')</code> into one of these kernels. To run the code use the shortcut <code>Ctrl + Enter</code>.</li>
@@ -235,7 +241,7 @@
 <p><img src="figs/chp1/Figure15c.png" width="538" style="display: block; margin: auto;" />
 <br></p>
 </div>
-<div id="ending-your-session" class="section level3 unlisted unnumbered">
+<div id="ending-your-session-1" class="section level3 unlisted unnumbered">
 <h3>Ending your session</h3>
 <p>Once you have finished in your Jupyter session and have saved all your work, you can end the session from the terminal.</p>
 <p>Using <code>Ctrl + C</code> will prompt a <code>y/n</code> option. Either type <code>y</code> or <code>Ctrl + C</code> again to end the session.</p>
@@ -246,12 +252,6 @@
 <p>Next time you go to run a Jupyter Notebook you will not need to repeat the whole process as you have already installed Docker and the GDS environment. Instead you can start from [Running Python through Docker] and carry on from there.</p>
 
 </div>
-</div>
-</div>
-<h3>References</h3>
-<div id="refs" class="references">
-<div id="ref-gds_env">
-<p>Arribas-Bel, Dani. 2019. <em><code>gds_env</code>: A Containerised Platform for Geographic Data Science</em> (version 5.0). <a href="https://darribas.org/gds_env">https://darribas.org/gds_env</a>.</p>
 </div>
 </div>
             </section>

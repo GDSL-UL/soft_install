@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Windows 10 Home/pre-10 | Software Installation Guide</title>
   <meta name="description" content="Installation Guide for R and Python" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Windows 10 Home/pre-10 | Software Installation Guide" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Francisco Rowe, Dani Arribas-Bel" />
 
 
-<meta name="date" content="2021-02-14" />
+<meta name="date" content="2021-03-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="win10pro.html"/>
 <link rel="next" href="windows-version.html"/>
-<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -116,7 +116,7 @@
             <section class="normal" id="section-">
 <div id="otherWin" class="section level1 unnumbered">
 <h1>Windows 10 Home/pre-10</h1>
-<p>This guide covers the installation of Python on machines running Windows 10 Home Edition or versions of Windows prior to Windows 10 (e.g. Windows 7). With this approach, you will install Python “natively”, that is running directly on your operating system.</p>
+<p>This guide covers the installation of Python on machines running Windows 10 Home Edition or versions of Windows prior to Windows 10 (e.g. Windows 7). With this approach, you will install Python “natively,” that is running directly on your operating system.</p>
 <div class="alert alert-success" style="font-size:120%">
 <p><b>TIP</b>: <br></p>
 <p>If you are unsure what version of Windows you are running, please check out <a href="windows-version.html#windows-version">this guide</a> first.</p>
@@ -137,7 +137,6 @@
 <p>To complete this installation route successfully, you will need the following:</p>
 <ul>
 <li>A good internet connection</li>
-<li>The <code>gds_py.yml</code> file that you can download on <a href="https://github.com/darribas/gds_env/raw/7a6a2b3b47d6faa96e854e35dfcf8672e34b6db4/gds_py/gds_py.yml">this link</a>. Right click and “Save Link As” to download it to your computer, as illustrated in the blue box below.</li>
 <li>The <code>jl_setup.bat</code> file that you can download on <a href="jl_setup.bat">this link</a>. Right click and “Save Link As” to download it to your computer, as illustrated in the blue box below.</li>
 </ul>
 <div class="alert alert-info" style="font-size:120%">
@@ -146,11 +145,7 @@
 <ol style="list-style-type: decimal">
 <li>Right-click on the link to each file and select “Save link as”</li>
 </ol>
-<p><img src="figs/chp4/download_file.png" width="570" style="display: block; margin: auto;" /></p>
-<ol start="2" style="list-style-type: decimal">
-<li>This will prompt a window as below. Select a destination to download it to (the Desktop, for example) and hit “Save”</li>
-</ol>
-<p><img src="figs/chp4/save_file.png" width="710" style="display: block; margin: auto;" /></p>
+<p><img src="figs/chp4/download_file.png" width="588" style="display: block; margin: auto;" /></p>
 </div>
 <ul>
 <li>A copy of Miniconda for Windows and Python 3.8. Make sure you check <a href="windows-version.html#windows-arch">which architecture of Windows you are running</a> before proceeding.</li>
@@ -167,7 +162,7 @@
 <li>This will download the Miniconda installation file. Depending on your setup and browser, you will need to select where to place it (the Desktop folder would be a good option) or it will go straight into a default location (e.g. the Downloads folder)</li>
 </ol>
 </div>
-<p>For the sake of this guide, we will assume you download the two files (<code>gds_py.yml</code> and <code>jl_setup.bat</code>) and the Miniconda installer on the Desktop folder (<code>C:\Users\username\Desktop</code>). You do not need to choose this folder but, if you use a different one, please adjust all instructions below accordingly.</p>
+<p>For the sake of this guide, we will assume you download the <code>jl_setup.bat</code> file and the Miniconda installer on the Desktop folder (<code>C:\Users\username\Desktop</code>). You do not need to choose this folder but, if you use a different one, please adjust all instructions below accordingly.</p>
 </div>
 <div id="miniconda_install" class="section level3 unlisted unnumbered">
 <h3>Minicoda Install</h3>
@@ -218,18 +213,17 @@
 </ol>
 <p><img src="figs/chp4/Conda_1.PNG" width="491" style="display: block; margin: auto;" /></p>
 <ol start="4" style="list-style-type: decimal">
-<li>Now we need to “navigate” to the folder where you placed the files downloaded above (<code>gds_py.yml</code> and <code>jl_setup.bat</code>). In this illustration, we are using the Desktop folder, so you can run the following command:</li>
+<li>Now we need to “navigate” to the folder where you placed the <code>jl_setup.bat</code>file. In this illustration, we are using the Desktop folder, so you can run the following command:</li>
 </ol>
 <pre class="shell"><code>cd Desktop</code></pre>
 <p>Note that you can move to a given folder by using the command <code>cd myFolder</code> to move forward through folders, and <code>cd ..</code> to move backwards. Once you have typed the command, press <em>Enter</em>.</p>
 <ol start="5" style="list-style-type: decimal">
 <li>Once you have navigated to the location of your files (e.g. <em>Desktop</em>), run the following command in the Anaconda Prompt, and press enter to execute it:</li>
 </ol>
-<pre class="shell"><code>conda-env create -f gds_py.yml</code></pre>
-<p><img src="figs/chp4/Conda_4.PNG" width="490" style="display: block; margin: auto;" /></p>
+<pre class="shell"><code>conda-env create -f https://github.com/darribas/gds_env/raw/v6.0post1/gds_py/gds_py.yml</code></pre>
 <div class="alert alert-info" style="font-size:120%">
 <p><b>TIP</b>: <br></p>
-<p>This step requires that <code>gds_py.yml</code> exists in the folder where you have directed the Anaconda Prompt (e.g. <code>C:\Users\username\Downloads</code>) and will take a while, depending on the speed of your connection but no less than 15-20 minutes. Grab a <em>cuppa</em> and be patient!</p>
+<p>This step will take a while, depending on the speed of your connection but no less than 15-20 minutes. Grab a <em>cuppa</em> and be patient!</p>
 </div>
 <ol start="6" style="list-style-type: decimal">
 <li>If everything has gone according to plan, your Anaconda Prompt should look a bit like this:</li>

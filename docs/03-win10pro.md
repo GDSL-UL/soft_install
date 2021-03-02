@@ -61,8 +61,11 @@ Once you have Docker installed and running on your machine, installing everythin
 1. Open PowerShell following the same steps as above (you can use the same window as before or a fresh new one).
 2. Run (type and hit "Enter") the following command:
 
+**NOTE**: please ignore the version showing in the screenshot, follow that in
+the command below
+
 ```shell
-docker pull darribas/gds:5.0
+docker pull darribas/gds:6.0
 ```
 
 <img src="figs/chp3/pull_gds.png" width="614" style="display: block; margin: auto;" />
@@ -79,7 +82,10 @@ Make sure you are connected to the internet and it is a stable connection. This 
 
 ### Check success {#winpro_success .unlisted .unnumbered}
 
-If everything has gone according to plan, you should see `darribas/gds:5.0` show up on your terminal when you type `docker image ls` (note in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gds:5.0` listed):
+If everything has gone according to plan, you should see `darribas/gds:6.0` show up on your terminal when you type `docker image ls` (note in the image below there are other containers that are not required, do not worry if you don't have those or slightly different values on the ID and the "CREATED" columns, the important bit is having `darribas/gds:6.0` listed):
+
+**NOTE**: please ignore the version showing in the screenshot, follow that in
+the command below
 
 <img src="figs/chp3/docker_success.png" width="614" style="display: block; margin: auto;" />
 <br>
@@ -94,8 +100,12 @@ To start up Python through Docker, follow these steps:
 
 1. In a new PowerShell window, type the following command to run the container and hit enter: 
 
+**NOTE**: please ignore the version showing in the screenshot, follow that in
+the command below
+
+
 ```shell
-docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:5.0
+docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:6.0
 ```
 
 <img src="figs/chp3/docker_run.png" width="614" style="display: block; margin: auto;" />
