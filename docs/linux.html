@@ -24,7 +24,7 @@
 <meta name="author" content="Francisco Rowe, Dani Arribas-Bel" />
 
 
-<meta name="date" content="2021-03-05" />
+<meta name="date" content="2021-06-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -159,7 +159,7 @@
 </ol>
 <p><strong>NOTE</strong>: please ignore the version showing in the screenshot, follow that in
 the command below</p>
-<pre class="shell"><code>docker pull darribas/gds:6.0</code></pre>
+<pre class="shell"><code>docker pull darribas/gds:6.1</code></pre>
 <p><img src="figs/chp2/terminal_pull.png" width="689" style="display: block; margin: auto;" />
 <br></p>
 <p>You will know this has completed when each line says ‘Pull complete.’</p>
@@ -170,7 +170,7 @@ the command below</p>
 </div>
 <div id="check-success-1" class="section level3 unlisted unnumbered">
 <h3>Check success</h3>
-<p>If everything has gone according to plan, you should see <code>darribas/gds:6.0</code> show up on your terminal when you type <code>docker image ls</code> (note in the image below there are other containers that are not required, do not worry if you don’t have those or slightly different values on the ID and the “CREATED” columns, the important bit is having <code>darribas/gds:6.0</code> listed):</p>
+<p>If everything has gone according to plan, you should see <code>darribas/gds:6.1</code> show up on your terminal when you type <code>docker image ls</code> (note in the image below there are other containers that are not required, do not worry if you don’t have those or slightly different values on the ID and the “CREATED” columns, the important bit is having <code>darribas/gds:6.1</code> listed):</p>
 <p><strong>NOTE</strong>: please ignore the version showing in the screenshot, follow that in
 the command below</p>
 <p><img src="figs/chp2/docker_image_ls.png" width="689" style="display: block; margin: auto;" />
@@ -188,7 +188,7 @@ the command below</p>
 </ol>
 <p><strong>NOTE</strong>: please ignore the version showing in the screenshot, follow that in
 the command below</p>
-<pre class="shell"><code>docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:6.0</code></pre>
+<pre class="shell"><code>docker run --rm -ti -p 8888:8888 -v ${PWD}:/home/jovyan/work darribas/gds:6.1</code></pre>
 <p><img src="figs/chp2/docker_run.png" width="689" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <p>You have now started a Python session.</p>

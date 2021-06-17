@@ -119,7 +119,7 @@ Note that you can move to a given folder by using the command `cd myFolder` to m
 5. Once you have navigated to the location of your files (e.g. _Desktop_), run the following command in the Anaconda Prompt, and press enter to execute it: 
 
 ```shell
-conda-env create -f https://github.com/darribas/gds_env/raw/v6.0post1/gds_py/gds_py.yml
+conda-env create -f https://github.com/darribas/gds_env/raw/v6.1/gds_py/gds_py.yml
 ```
 
 <div class="alert alert-info" style="font-size:120%">
